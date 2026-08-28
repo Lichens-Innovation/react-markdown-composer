@@ -1,0 +1,15 @@
+src/api/generated/
+src/constants.ts
+package.json
+bun.lock
+renovate.json
+.github/workflows/create-release.yml
+
+// ignore markdown files
+*.md
+
+// ignore openapi files
+public/openapi/openapi.json
+
+// ignore json files
+*.json
