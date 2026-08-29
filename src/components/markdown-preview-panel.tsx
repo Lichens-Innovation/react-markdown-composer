@@ -5,6 +5,7 @@ import { Alert, Flex } from "antd";
 import { type FunctionComponent, useEffect, useRef } from "react";
 
 import { htmlElementPlugins } from "../crepe-html/html-element.plugin";
+import { useCrepeContentPadding } from "../hooks/use-crepe-content-padding";
 
 interface MarkdownPreviewPanelProps {
   markdown: string;
@@ -40,16 +41,26 @@ const MarkdownPreviewInner: FunctionComponent<MarkdownPreviewInnerProps> = ({ ma
   return <Milkdown />;
 };
 
-export const MarkdownPreviewPanel: FunctionComponent<MarkdownPreviewPanelProps> = ({ markdown, errorMessage }) => (
-  <Flex vertical role="region" aria-label="Markdown preview" style={{ height: "100%", overflow: "auto" }}>
-    {!!errorMessage && (
-      <Alert type="error" showIcon message="Template preview error" description={errorMessage} style={{ margin: 8 }} />
-    )}
+export const MarkdownPreviewPanel: FunctionComponent<MarkdownPreviewPanelProps> = ({ markdown, errorMessage }) => {
+  useCrepeContentPadding();
 
-    <Flex flex={1} style={{ minHeight: 0, overflow: "auto" }}>
-      <MilkdownProvider>
-        <MarkdownPreviewInner markdown={markdown} />
-      </MilkdownProvider>
+  return (
+    <Flex
+      vertical
+      role="region"
+      aria-label="Markdown preview"
+      className="markdown-preview-panel"
+      style={{ height: "100%", overflow: "auto" }}
+    >
+      {!!errorMessage && (
+        <Alert type="error" showIcon title="Template preview error" description={errorMessage} style={{ margin: 8 }} />
+      )}
+
+      <Flex flex={1} style={{ minHeight: 0, overflow: "auto" }}>
+        <MilkdownProvider>
+          <MarkdownPreviewInner markdown={markdown} />
+        </MilkdownProvider>
+      </Flex>
     </Flex>
-  </Flex>
-);
+  );
+};
