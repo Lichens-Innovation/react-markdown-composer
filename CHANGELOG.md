@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.0.0...v1.1.0) (2026-08-29)
+
+
+### Features
+
+* **release:** dist packaging ([0ade0ae](https://github.com/Lichens-Innovation/react-markdown-composer/commit/0ade0aeaf76bc4bb7a2bfdb0f357749a4e483932))
+
 # 1.0.0 (2026-08-29)
 
 
