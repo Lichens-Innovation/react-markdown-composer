@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# exit immediately if any command fails
+set -e
+
+echo "Running typecheck to ensure the code is type-safe…"
+bun run typecheck
+echo "✅ Typecheck completed"
+
+echo "Running lint-staged to apply automatic fixes to staged files…"
+bunx lint-staged
+echo "✅ Lint staged completed"
+
+echo "Running habit-hooks to catches structural smells…"
+bun run habit:hooks
+echo "✅ Habit Hooks completed"

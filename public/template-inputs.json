@@ -1,0 +1,2327 @@
+{
+    "formData": {
+        "date1": "2026-08-18",
+        "text1": "John Doe Smith",
+        "select1": "Technicien/ne en environnement, usine de pâtes et papiers",
+        "select2": "Nuageux",
+        "inspection1": {
+            "status": "compliant",
+            "comment": "Le totalisateur des eaux de procédé et d'effluent de l'atelier de pâte a été relevé sans anomalie : le compteur tourne de façon continue, le joint du regard est étanche et aucune flaque n'est visible autour de la station P33. La lecture cadre avec les volumes habituels de l'équipe de quart et avec le débit renvoyé vers le traitement primaire. Aucune dérive ni fuite vers le fossé du parc à écorces n'a été observée au moment de l'inspection.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection2": {
+            "status": "compliant",
+            "comment": "L'alimentation en eau potable vers la rampe de lavage des camions de copeaux est conforme. Le boyau, les raccords et le pistolet ne présentent pas de fuite, et l'eau de rinçage s'écoule bien vers le décanteur plutôt que vers la cour à bois. Le personnel d'expédition confirme que la rampe a servi ce matin pour deux camions sans débordement ni projection hors de l'aire bétonnée.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection3": {
+            "status": "compliant",
+            "comment": "La recirculation des eaux de procédé vers la rampe de lavage fonctionne comme prévu : la vanne est ouverte au débit prescrit, le filtre en amont n'est pas colmaté par des fibres et aucun retour d'eau sale n'atteint le réseau potable. Le sol autour des canalisations est sec. La consigne d'hiver (vidange partielle pour gel) n'est pas encore applicable à cette date.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection4": {
+            "status": "compliant",
+            "comment": "Le totalisateur d'entrée d'eau municipale vers l'usine affiche une progression cohérente avec la consommation des salles de contrôle, des douches et de l'atelier de blanchiment. Aucune marque d'humidité sur le compteur, pas de bris de plombage. La lecture a été notée dans le carnet de la station P30 et sera transférée au rapport mensuel d'environnement.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection5": {
+            "status": "compliant",
+            "comment": "Le totalisateur de distribution d'eau potable vers les ateliers et salles de contrôle est lisible et étanche. Les canalisations le long du conteneur ne suintent pas et l'isolation est en bon état. Aucun usage non autorisé (lavage d'équipement, remplissage de citernes de procédé) n'a été constaté sur ce réseau, ce qui limite le risque de contamination croisée avec les eaux industrielles.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection6": {
+            "status": "compliant",
+            "comment": "L'entrepôt de pièces à l'est, près de la cour à bois, est dégagé : allées praticables, palettes de rouleaux et de toiles de machine empilées de façon stable, pas de copeaux accumulés contre les murs. Un balayage a été fait en début de quart. Aucun contenant de produit chimique n'était entreposé hors des zones prévues, et les absorbants du coin déversement restent accessibles.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection7": {
+            "status": "compliant",
+            "comment": "L'abri des cylindres de gaz (oxygène, azote et acétylène) près de l'atelier mécanique est en ordre : bouteilles chaînées, capuchons en place, séparation des gaz comburants et des gaz combustibles respectée. Le plancher est sec, sans trace d'huile de raffineur. L'affichage SIMDUT et le pictogramme d'interdiction de fumer sont lisibles depuis l'allée des chariots.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection8": {
+            "status": "compliant",
+            "comment": "Le conteneur des huiles neuves destinées aux machines à papier et aux raffineurs est propre, fermé et étiqueté. Les fûts reposent dans des bacs de rétention dont la capacité couvre le plus gros contenant. Aucune goutte sous les robinets de soutirage. L'inventaire affiché sur la porte correspond aux fûts présents (hydraulique, engrenages, graisse de paliers).",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection9": {
+            "status": "compliant",
+            "comment": "L'atelier mécanique de l'usine est dans un état acceptable : copeaux et poussières de meulage balayés, aucun déversement d'huile de réducteur sur le béton, bacs d'égouttement sous les établis. Les pièces en attente de montage (lames de déchiqueteur, racleurs de presse) sont hors des allées de circulation. Les absorbants et le kit déversement sont au complet près de la porte sud.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "repeatable1": [
+            {
+                "text1": "Des travaux de réfection de la dalle de béton sont en cours entre le quai de l'entrepôt de pièces et l'atelier d'entretien de l'usine de pâtes et papiers. L'accès des chariots élévateurs vers la cour à bois et le secteur de la machine à papier est partiellement restreint; les déplacements de barils, de bacs de rétention et de sacs de produits chimiques doivent emprunter le chemin de contournement le long du parc à écorces. Un balisage temporaire est en place, mais il faudra prévoir un nettoyage des résidus de copeaux, d'écorces et d'huile à la fin des travaux avant de rétablir la circulation habituelle entre les deux bâtiments."
+            }
+        ],
+        "repeatable2": [],
+        "inspection10": {
+            "status": "compliant",
+            "comment": "Les bacs de déchets industriels, solides contaminés aux huiles et aérosols d'entretien sont bien triés et fermés. Les bombes de dégraissant usagées sont dans le contenant dédié, pas mélangées aux chiffons. Les étiquettes de contenu sont lisibles. Le bac de solides huileux n'est pas plein et pourra attendre la prochaine tournée vers l'entrepôt MDR sans risque de trop-plein.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection11": {
+            "status": "compliant",
+            "comment": "Le conteneur de ferraille (tôles, boyaux métalliques, pièces usées de presses et de raffineurs) est rempli sous la ligne de remplissage, sans débordement au sol. Aucun filtre à huile ni contenant chimique n'a été jeté avec le métal. L'aire autour du roll-off est balayée, sans copeaux mêlés à la ferraille, ce qui facilite l'enlèvement par le récupérateur.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection12": {
+            "status": "compliant",
+            "comment": "Le conteneur de courroies, joints et caoutchoucs usés des presses et raffineurs est conforme : matériaux secs, pas de contamination visible par de la liqueur ou de l'huile. Le couvercle ferme correctement malgré le vent du parc à écorces. Une prochaine collecte est prévue ; le niveau actuel laisse encore de la marge.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection13": {
+            "status": "compliant",
+            "comment": "Le conteneur de bois d'emballage, palettes et chutes de copeaux est bien utilisé. Les palettes cassées ne traînent pas à côté, et aucun bois traité ou souillé d'huile de machine n'a été observé dans le lot. L'accumulation reste sous le bord supérieur, ce qui évite que le vent du nord n'éparpille des planches vers le fossé d'eaux pluviales.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection14": {
+            "status": "compliant",
+            "comment": "Le conteneur de déchets domestiques des salles de pause et salles de contrôle est fermé, sans débordement ni odeur anormale. Aucun déchet industriel (chiffons huileux, piles, aérosols) n'y a été repéré. Le sol autour est propre. La fréquence d'enlèvement actuelle suffit pour le quart de jour.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection15": {
+            "status": "compliant",
+            "comment": "Le conteneur de câbles et fils électriques hors d'usage (armoires de la machine à papier, capteurs de la cour à bois) est isolé du métal ordinaire. Les extrémités ne traînent pas au sol. Pas de transformateur ni d'équipement suspecté de BPC. L'identification « fils / cuivre » sur la paroi reste lisible.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection16": {
+            "status": "compliant",
+            "comment": "Le conteneur Amnor des sacs vides de métabisulfite de sodium, près de l'atelier de blanchiment (P40), est fermé et à l'abri de la pluie. Les sacs sont pliés, sans résidu pulvérulent important sur le rebord. Aucun sac plein ni produit encore utilisable n'a été jeté par erreur. L'aire de chargement est sèche, sans trace blanche vers le regard d'eaux pluviales.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection17": {
+            "status": "compliant",
+            "comment": "Le roll-off Amnor de sols contaminés (huiles, liqueurs et produits de blanchiment) est bâché, sans suintement visible aux joints. Le niveau de remplissage permet encore un quart de chargement. Aucun dépôt n'a été constaté au pied du conteneur. L'étiquette de matières contaminées et le numéro de lot interne sont en place pour le prochain enlèvement.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection18": {
+            "status": "needsAttention",
+            "comment": "Des bacs de rétention supplémentaires seraient nécessaires dès maintenant pour contenir les fûts d'huiles usées et de produits chimiques de blanchiment entreposés temporairement près de la machine à papier, en attendant leur transport vers l'entrepôt des matières résiduelles dangereuses. Plusieurs contenants reposent directement au sol sans cuvette, ce qui présente un risque de déversement vers le réseau d'eaux de procédé et le parc à écorces. Il est recommandé d'installer des bacs de rétention dimensionnés selon le plus gros contenant avant la prochaine rotation du transporteur autorisé, et de consigner l'action dans le registre environnemental de l'usine.",
+            "objects": [
+                "c9630b0e-0c76-4596-9dd6-56f4046da732"
+            ],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection19": {
+            "status": "compliant",
+            "comment": "Le bac de solides contaminés, aérosols d'entretien et ampoules usagées de l'atelier (P21) est conforme : compartiments distincts, couvercles rabattus, pas de mélange avec les ordures ménagères. Les ampoules fluorescentes sont dans le contenant rigide prévu. Le bac n'est pas saturé. Rien à signaler pour le transport vers l'entrepôt MDR cette semaine.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection20": {
+            "status": "compliant",
+            "comment": "L'entrepôt d'huiles neuves près de l'infirmerie et du vestiaire est propre et ordonné. Les allées permettent de sortir un fût sans le faire rouler sur le seuil. Aucune odeur d'hydrocarbure stagnante, pas de film d'huile sur le béton. L'éclairage et l'affichage des FDS près de la porte sont en bon état.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection21": {
+            "status": "compliant",
+            "comment": "Bidons, barils et bacs de rétention des huiles de lubrification sont en bon état : cuvettes vides de liquide accumulé, parois sans perforation, robinets fermés. Les contenants vides sont entreposés bouchon vers le haut, à part des pleins. La capacité de rétention du plus gros fût de 205 L est respectée dans chaque îlot.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection22": {
+            "status": "compliant",
+            "comment": "Les absorbants d'urgence (sacs de tourbe, boudins, feuilles hydrophobes) sont présents en quantité suffisante près de l'entrepôt d'huiles et près de la machine à papier. Les sacs ouverts ont été refermés. Le contenu du kit déversement a été vérifié : gants, lunettes et sacs pour déchets souillés sont au complet. Rien à réapprovisionner aujourd'hui.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection23": {
+            "status": "compliant",
+            "comment": "Les bassins de décantation des eaux de procédé, côté cuves agitatrices de liqueur noire, ne montrent pas d'accumulation anormale de solides en surface. Les agitateurs tournent, aucune croûte épaisse ni odeur inhabituelle de fermentation. Les passerelles sont dégagées. Un léger voile de fibres est normal en sortie d'atelier de pâte et ne justifie pas un curage cette semaine.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection24": {
+            "status": "compliant",
+            "comment": "Le réservoir de carbonate de calcium liquide au secteur préparation de pâte (près PC2) est étanche, cuve de rétention sèche, échelle et garde-corps en place. Le niveau visuel correspond à l'indication en salle de contrôle. Aucun dépôt blanchâtre hors de l'aire de confinement. Les flexibles de transfert vers le mélangeur sont rincés et rangés.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection25": {
+            "status": "compliant",
+            "comment": "Le silo et l'aire de chaux vive au sud de l'usine, près du four à chaux et du recausticage (P8), sont propres pour un secteur poussiéreux : bâches en place, pas de tas de chaux hors confinement, caniveau de collecte dégagé. Les opérateurs confirment l'absence de fuite au déchargement du dernier camion. L'affichage de danger (base forte, poussières) est lisible.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection26": {
+            "status": "compliant",
+            "comment": "L'entreposage de chaux au secteur des convoyeurs de copeaux et de l'alimentation des lessiveurs (P35) est conforme. Pas de sac déchiré le long du convoyeur, pas de laitance vers les fosses à écorces. La zone de transbordement a été balayée après la dernière livraison. Les extincteurs du secteur restent accessibles malgré les piles de big-bags.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection27": {
+            "status": "compliant",
+            "comment": "Le poste de garde et l'aire de la barrière d'accès au site sont propres : pas de déchets, pas de flaque d'huile de camions de copeaux sur le bitume. Le bac à sel et le matériel de déneigement sont rangés hors saison. L'éclairage de la barrière fonctionne. Rien qui nuise à l'accueil des transporteurs de produits chimiques.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection28": {
+            "status": "compliant",
+            "comment": "Aucun entreposage temporaire de matières résiduelles dangereuses n'est en cours au poste de garde. La consigne (pas de barils ni de bacs MDR hors de l'entrepôt dédié) est affichée et respectée. Les chauffeurs de camions-citernes attendent à l'intérieur de l'enceinte, sans déposer de contenants le long de la clôture.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection29": {
+            "status": "compliant",
+            "comment": "Les conteneurs ouverts longeant le bâtiment de l'atelier d'entretien (P38-P40) sont utilisés pour le tri prévu (bois, métal, non contaminé). Aucun mélange de solides huileux avec les déchets secs. Le sol le long du mur a été nettoyé des copeaux. Les couvercles partiels limitent l'envolée de papiers vers le parc à écorces par vent d'ouest.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection30": {
+            "status": "compliant",
+            "comment": "La propreté générale de l'atelier d'entretien est satisfaisante : fosses visiblement sèches, pas de film d'huile vers le séparateur, outils et pièces de la machine à papier hors des drains. Un nettoyage des gouttières intérieures a eu lieu en début de semaine. Les poubelles d'atelier ne débordent pas.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection31": {
+            "status": "compliant",
+            "comment": "L'entreposage MDR à l'atelier d'entretien se limite aux bacs autorisés, tous fermés et étiquetés, en attente du transfert vers l'entrepôt central. Pas de fût de solvant hors rétention. La quantité sur place reste sous le seuil interne de 48 h. Le personnel de mécanique connaît le chemin vers l'entrepôt MDR et le registre d'entrée.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection32": {
+            "status": "compliant",
+            "comment": "Les aires d'entreposage au sud, près de la machine à papier, sont dégagées : rouleaux, toiles et pièces en attente sur supports, pas de produit chimique hors bac. Le passage pompiers le long du bâtiment reste libre. Quelques copeaux apportés par le vent ont été balayés pendant la tournée. Photo jointe pour documenter l'état après le ménage de quart.",
+            "objects": [
+                "16495933-51e9-44aa-8247-00e352d55161"
+            ],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection33": {
+            "status": "compliant",
+            "comment": "Les conteneurs maritimes de pièces de rechange et de produits chimiques de procédé sont cadenassés, sans corrosion perforante visible sur les seuils. Les produits (antimoisissure, biocide, additifs de rétention) restent sur palettes dans des bacs. L'inventaire à la porte correspond aux lots déclarés. Aucune odeur de solvant à l'ouverture éclair de la porte.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection34": {
+            "status": "compliant",
+            "comment": "La cour à bois et le secteur du déchiqueteur (PC1) sont acceptables pour une aire à ciel ouvert : tas de copeaux dans les limites des murs, pas de déversement d'huile hydraulique sous le déchiqueteur, fossés d'eaux pluviales non obstrués par les écorces. Les fuites d'huile connues du vérin ont été essuyées. Circulation des chargeuses balisée.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection35": {
+            "status": "compliant",
+            "comment": "Le bac de solides contaminés et les poubelles de la cour à bois / déchiqueteur sont en place, couvercles fonctionnels malgré la poussière d'écorces. Les chiffons huileux de l'entretien du déchiqueteur vont bien dans le bac contaminé, pas dans les ordures. Niveau de remplissage correct. Prochain transfert vers l'entrepôt MDR prévu avec la tournée de l'atelier mécanique.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection36": {
+            "status": "compliant",
+            "comment": "Le réservoir d'huile usée des équipements mobiles, entre vestiaire et garage, est étanche : niveau dans la plage verte, bac de rétention sec, évent dégagé. Le pistolet de vidange ne goutte pas. L'affichage « huile usée — MDR » et le numéro d'urgence sont lisibles. Pas de remplissage excessif avant la collecte du transporteur.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection37": {
+            "status": "compliant",
+            "comment": "Le réservoir de diesel des chargeuses et camions de copeaux (entre vestiaire et garage) ne présente pas de suintement aux brides ni au pistolet. La cuve de rétention est vide d'eau de pluie (drain vérifié). L'extincteur et le bac absorbant du poste de remplissage sont en place. Photo jointe du poste après inspection visuelle.",
+            "objects": [
+                "a1670143-3a7a-4bbc-bea0-4dc57d2354c4"
+            ],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection38": {
+            "status": "notInspected",
+            "comment": "Non inspecté : le totalisateur d'eau potable du séparateur eau-huile n'est relevé qu'en période estivale, lorsque le réseau d'eaux huilées du garage et de l'atelier est en mode lavage à grand débit. En août, le compteur est hors circuit pour entretien de la cellule coalescente. La lecture reprendra après le redémarrage prévu la semaine prochaine ; aucun indice de fuite autour du séparateur n'a toutefois été noté en passant.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection39": {
+            "status": "needsAttention",
+            "comment": "Un nouveau registre d'expédition des matières résiduelles dangereuses est nécessaire : le registre actuel de l'entrepôt MDR est saturé et plusieurs envois de barils d'huiles usées, de liqueur noire résiduelle et de sacs vides de métabisulfite n'y figurent plus de façon lisible. Sans registre à jour, le suivi réglementaire des sorties vers le transporteur autorisé ne peut plus être démontré lors d'une inspection ministérielle. Il faut remplacer le registre dès que possible, reporter les dernières expéditions encore en cours et former le personnel de l'atelier d'entretien à la nouvelle procédure de consignation.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection40": {
+            "status": "needsAttention",
+            "comment": "Les étiquettes SIMDUT commandées pour les bacs de l'entrepôt des matières résiduelles dangereuses n'ont toujours pas été reçues du fournisseur. Un bac de solides contaminés aux huiles de lubrification des raffineurs et de la machine à papier demeure sans étiquette, ce qui compromet l'identification du contenu et le tri avant l'expédition. En attendant la livraison, une étiquette temporaire doit être apposée, le bac isolé des autres contenants déjà identifiés, et le retard signalé au coordonnateur environnement de l'usine.",
+            "objects": [
+                "adc30b07-449f-492f-8b09-fc1a69145350",
+                "8b32445d-8c32-4be1-899f-127836d9a61f"
+            ],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection41": {
+            "status": "compliant",
+            "comment": "La propreté générale de l'entrepôt des matières résiduelles dangereuses est bonne : plancher balayé, pas de flaque sous les bacs, allées libres jusqu'aux portes coupe-feu. Les absorbants du coin déversement sont secs et empilés. L'odeur d'hydrocarbure reste faible, cohérente avec des fûts fermés. Rien à corriger de ce côté malgré les écarts d'étiquetage et de registre ailleurs dans le même bâtiment.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection42": {
+            "status": "compliant",
+            "comment": "L'entreposage des MDR dans l'entrepôt dédié respecte la séparation des familles (huiles usées, solides contaminés, résidus de blanchiment, piles). Les bacs sont sur rétention, gerbage limité à la hauteur permise. Les quantités restent sous le seuil déclaré au plan de gestion. Seuls le registre et certaines étiquettes posent problème, traités aux points d'inspection correspondants.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection43": {
+            "status": "compliant",
+            "comment": "L'accès à l'entrepôt MDR est cadenassé, la clé est au poste de garde selon la consigne, et l'allée est dégagée (pas de neige à cette date, pas de palettes devant la porte). L'éclairage extérieur fonctionne. Les transporteurs peuvent reculer au quai sans empiéter sur le fossé d'eaux pluviales. Le cadenas et le loquet ont été essayés en fin de tournée.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        },
+        "inspection44": {
+            "status": "compliant",
+            "comment": "L'identification, les pictogrammes SIMDUT et l'affichage réglementaire de l'entrepôt MDR sont en place sur les portes et les îlots. Les panneaux de danger (inflammable, corrosif) restent lisibles. Le plan d'intervention déversement est affiché près de l'extincteur. Seule l'étiquette manquante sur un bac (voir le point d'inspection dédié) sort de cette conformité générale d'affichage.",
+            "objects": [],
+            "location": "",
+            "eventUuid": "",
+            "evaluatedAt": ""
+        }
+    },
+    "printableImages": {
+        "8b32445d-8c32-4be1-899f-127836d9a61f": {
+            "uuid": "8b32445d-8c32-4be1-899f-127836d9a61f",
+            "imageDataURI": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAIAAAC2BqGFAAAA2ElEQVR42u3QQQ0AIAwAsZlBGfIRwSzwWAgsvZyCxpjLFw4EoEEbNGjQFECDNuhPobeOAw0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aH2jQoEGDBi3QoEGDBg1aoEGDBg0atECDBg0aNGiBBg0aNGjQAg0aNGjQoAUaNGjQoEELNGjQoEGDFmjQoEGDBi3QoEGDBg1aoDtAu2rQoEEbNGjQCECDNuhnT8O8q6T328P0AAAAAElFTkSuQmCC",
+            "filename": "img-008-005.png"
+        },
+        "adc30b07-449f-492f-8b09-fc1a69145350": {
+            "uuid": "adc30b07-449f-492f-8b09-fc1a69145350",
+            "imageDataURI": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAADICAIAAACszLLwAAABSklEQVR42u3QQQ0AMAgAMdTgX9C8MAt7LASSXk5B42S64UAAGrRBgwZNATRog14KXXoONGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGh8oEGDBg0atECDBg0aNGiBBg0aNGjQAg0aNGjQoAUaNGjQoEELNGjQoEGDFmjQoEGDBi3QoEGDBg1aoEGDBg0atECDBg0aNGiBBg0aNGjQAg0aNGjQoAUaNGjQoEELNGjQoEGDFmjQoEGDBi3QoEGDBg1aoEGDBg0atECDBg0aNGiBBg0aNGjQAg0aNGjQoAUaNGjQoEELNGjQoEGDFmjQoEGDBi3QoEGDBg1aoEGDBg0atECDBg0aNGiB3gjtX4MGDdqgQYNGABq0QY/9AmMsRHQNcftpAAAAAElFTkSuQmCC",
+            "filename": "img-008-004.png"
+        },
+        "a1670143-3a7a-4bbc-bea0-4dc57d2354c4": {
+            "uuid": "a1670143-3a7a-4bbc-bea0-4dc57d2354c4",
+            "imageDataURI": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAIAAAC2BqGFAAAA2ElEQVR42u3QQQ0AIAwAsZlBGfIRwSzwWAgsvZyCxpjLFw4EoEEbNGjQFECDNuhPobeOAw0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aH2jQoEGDBi3QoEGDBg1aoEGDBg0atECDBg0aNGiBBg0aNGjQAg0aNGjQoAUaNGjQoEELNGjQoEGDFmjQoEGDBi3QoEGDBg1aoDtAu2rQoEEbNGjQCECDNuhnT8O8q6T328P0AAAAAElFTkSuQmCC",
+            "filename": "img-007-003.png"
+        },
+        "16495933-51e9-44aa-8247-00e352d55161": {
+            "uuid": "16495933-51e9-44aa-8247-00e352d55161",
+            "imageDataURI": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAADICAIAAACszLLwAAABSklEQVR42u3QQQ0AMAgAMdTgX9C8MAt7LASSXk5B42S64UAAGrRBgwZNATRog14KXXoONGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGh8oEGDBg0atECDBg0aNGiBBg0aNGjQAg0aNGjQoAUaNGjQoEELNGjQoEGDFmjQoEGDBi3QoEGDBg1aoEGDBg0atECDBg0aNGiBBg0aNGjQAg0aNGjQoAUaNGjQoEELNGjQoEGDFmjQoEGDBi3QoEGDBg1aoEGDBg0atECDBg0aNGiBBg0aNGjQAg0aNGjQoAUaNGjQoEELNGjQoEGDFmjQoEGDBi3QoEGDBg1aoEGDBg0atECDBg0aNGiB3gjtX4MGDdqgQYNGABq0QY/9AmMsRHQNcftpAAAAAElFTkSuQmCC",
+            "filename": "img-006-002.png"
+        },
+        "c9630b0e-0c76-4596-9dd6-56f4046da732": {
+            "uuid": "c9630b0e-0c76-4596-9dd6-56f4046da732",
+            "imageDataURI": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAIAAAC2BqGFAAAA2ElEQVR42u3QQQ0AIAwAsZlBGfIRwSzwWAgsvZyCxpjLFw4EoEEbNGjQFECDNuhPobeOAw0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBg0aH2jQoEGDBi3QoEGDBg1aoEGDBg0atECDBg0aNGiBBg0aNGjQAg0aNGjQoAUaNGjQoEELNGjQoEGDFmjQoEGDBi3QoEGDBg1aoDtAu2rQoEEbNGjQCECDNuhnT8O8q6T328P0AAAAAElFTkSuQmCC",
+            "filename": "img-004-001.png"
+        }
+    },
+    "sections": [
+        {
+            "key": "",
+            "title": "",
+            "fields": []
+        },
+        {
+            "key": "section1",
+            "title": "Informations générales de l'inspection environnementale",
+            "fields": [
+                {
+                    "title": "Inspecté par (nom de l'inspecteur ou de l'inspectrice)",
+                    "description": "",
+                    "type": "TEXT_ANSWER",
+                    "textAnswer": "Marion Kaiser",
+                    "fieldKey": "text1",
+                    "sectionKey": "section1",
+                    "sectionTitle": "Informations générales de l'inspection environnementale"
+                },
+                {
+                    "title": "Fonction de la personne qui inspecte",
+                    "description": "",
+                    "type": "SELECT",
+                    "choices": [
+                        {
+                            "label": "Conseiller/ère en environnement, usine de pâtes et papiers",
+                            "value": "Conseiller/ère en environnement, usine de pâtes et papiers"
+                        },
+                        {
+                            "label": "Coordonnateur/trice en environnement, usine de pâtes et papiers",
+                            "value": "Coordonnateur/trice en environnement, usine de pâtes et papiers"
+                        },
+                        {
+                            "label": "Technicien/ne en environnement, usine de pâtes et papiers",
+                            "value": "Technicien/ne en environnement, usine de pâtes et papiers"
+                        },
+                        {
+                            "label": "Stagiaire en environnement, usine de pâtes et papiers",
+                            "value": "Stagiaire en environnement, usine de pâtes et papiers"
+                        }
+                    ],
+                    "selectedChoices": [
+                        "Technicien/ne environnement"
+                    ],
+                    "multipleChoices": false,
+                    "fieldKey": "select1",
+                    "sectionKey": "section1",
+                    "sectionTitle": "Informations générales de l'inspection environnementale"
+                },
+                {
+                    "title": "Date de l'inspection sur le site",
+                    "description": "",
+                    "type": "DATE",
+                    "textAnswer": "2026-08-18",
+                    "fieldKey": "date1",
+                    "sectionKey": "section1",
+                    "sectionTitle": "Informations générales de l'inspection environnementale"
+                },
+                {
+                    "title": "Conditions météorologiques au moment de l'inspection",
+                    "description": "",
+                    "type": "SELECT",
+                    "choices": [
+                        {
+                            "label": "Soleil",
+                            "value": "Soleil"
+                        },
+                        {
+                            "label": "Pluie",
+                            "value": "Pluie"
+                        },
+                        {
+                            "label": "Nuageux",
+                            "value": "Nuageux"
+                        },
+                        {
+                            "label": "Neige",
+                            "value": "Neige"
+                        }
+                    ],
+                    "selectedChoices": [
+                        "Nuageux"
+                    ],
+                    "multipleChoices": false,
+                    "fieldKey": "select2",
+                    "sectionKey": "section1",
+                    "sectionTitle": "Informations générales de l'inspection environnementale"
+                }
+            ]
+        },
+        {
+            "key": "section3",
+            "title": "STATION DE TRAITEMENT DES EAUX DE PROCÉDÉ (P33)",
+            "fields": [
+                {
+                    "title": "Totalisateur des eaux de procédé et d'effluent de l'atelier de pâte (m³)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection1",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section3",
+                    "sectionTitle": "STATION DE TRAITEMENT DES EAUX DE PROCÉDÉ (P33)",
+                    "comment": "Le totalisateur des eaux de procédé et d'effluent de l'atelier de pâte a été relevé sans anomalie : le compteur tourne de façon continue, le joint du regard est étanche et aucune flaque n'est visible autour de la station P33. La lecture cadre avec les volumes habituels de l'équipe de quart et avec le débit renvoyé vers le traitement primaire. Aucune dérive ni fuite vers le fossé du parc à écorces n'a été observée au moment de l'inspection."
+                },
+                {
+                    "title": "Eau potable vers la rampe de lavage des camions de copeaux (m³)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection2",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section3",
+                    "sectionTitle": "STATION DE TRAITEMENT DES EAUX DE PROCÉDÉ (P33)",
+                    "comment": "L'alimentation en eau potable vers la rampe de lavage des camions de copeaux est conforme. Le boyau, les raccords et le pistolet ne présentent pas de fuite, et l'eau de rinçage s'écoule bien vers le décanteur plutôt que vers la cour à bois. Le personnel d'expédition confirme que la rampe a servi ce matin pour deux camions sans débordement ni projection hors de l'aire bétonnée."
+                },
+                {
+                    "title": "Recirculation des eaux de procédé vers la rampe de lavage (m³)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection3",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section3",
+                    "sectionTitle": "STATION DE TRAITEMENT DES EAUX DE PROCÉDÉ (P33)",
+                    "comment": "La recirculation des eaux de procédé vers la rampe de lavage fonctionne comme prévu : la vanne est ouverte au débit prescrit, le filtre en amont n'est pas colmaté par des fibres et aucun retour d'eau sale n'atteint le réseau potable. Le sol autour des canalisations est sec. La consigne d'hiver (vidange partielle pour gel) n'est pas encore applicable à cette date."
+                }
+            ]
+        },
+        {
+            "key": "section4",
+            "title": "CONTENEUR DE DISTRIBUTION D'EAU POTABLE DU SITE (P30)",
+            "fields": [
+                {
+                    "title": "Totalisateur d'entrée d'eau municipale vers l'usine (m³)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection4",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section4",
+                    "sectionTitle": "CONTENEUR DE DISTRIBUTION D'EAU POTABLE DU SITE (P30)",
+                    "comment": "Le totalisateur d'entrée d'eau municipale vers l'usine affiche une progression cohérente avec la consommation des salles de contrôle, des douches et de l'atelier de blanchiment. Aucune marque d'humidité sur le compteur, pas de bris de plombage. La lecture a été notée dans le carnet de la station P30 et sera transférée au rapport mensuel d'environnement."
+                },
+                {
+                    "title": "Totalisateur de distribution d'eau potable vers les ateliers et salles de contrôle (m³)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection5",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section4",
+                    "sectionTitle": "CONTENEUR DE DISTRIBUTION D'EAU POTABLE DU SITE (P30)",
+                    "comment": "Le totalisateur de distribution d'eau potable vers les ateliers et salles de contrôle est lisible et étanche. Les canalisations le long du conteneur ne suintent pas et l'isolation est en bon état. Aucun usage non autorisé (lavage d'équipement, remplissage de citernes de procédé) n'a été constaté sur ce réseau, ce qui limite le risque de contamination croisée avec les eaux industrielles."
+                }
+            ]
+        },
+        {
+            "key": "section5",
+            "title": "ENTREPÔT DE PIÈCES ET DE FOURNITURES (extérieur est, près de la cour à bois)",
+            "fields": [
+                {
+                    "title": "Propreté générale du secteur inspecté",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection6",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section5",
+                    "sectionTitle": "ENTREPÔT DE PIÈCES ET DE FOURNITURES (extérieur est, près de la cour à bois)",
+                    "comment": "L'entrepôt de pièces à l'est, près de la cour à bois, est dégagé : allées praticables, palettes de rouleaux et de toiles de machine empilées de façon stable, pas de copeaux accumulés contre les murs. Un balayage a été fait en début de quart. Aucun contenant de produit chimique n'était entreposé hors des zones prévues, et les absorbants du coin déversement restent accessibles."
+                },
+                {
+                    "title": "Abri des cylindres de gaz (oxygène, azote et acétylène près de l'atelier mécanique)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection7",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section5",
+                    "sectionTitle": "ENTREPÔT DE PIÈCES ET DE FOURNITURES (extérieur est, près de la cour à bois)",
+                    "comment": "L'abri des cylindres de gaz (oxygène, azote et acétylène) près de l'atelier mécanique est en ordre : bouteilles chaînées, capuchons en place, séparation des gaz comburants et des gaz combustibles respectée. Le plancher est sec, sans trace d'huile de raffineur. L'affichage SIMDUT et le pictogramme d'interdiction de fumer sont lisibles depuis l'allée des chariots."
+                },
+                {
+                    "title": "Conteneur des huiles neuves pour les machines à papier et les raffineurs",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection8",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section5",
+                    "sectionTitle": "ENTREPÔT DE PIÈCES ET DE FOURNITURES (extérieur est, près de la cour à bois)",
+                    "comment": "Le conteneur des huiles neuves destinées aux machines à papier et aux raffineurs est propre, fermé et étiqueté. Les fûts reposent dans des bacs de rétention dont la capacité couvre le plus gros contenant. Aucune goutte sous les robinets de soutirage. L'inventaire affiché sur la porte correspond aux fûts présents (hydraulique, engrenages, graisse de paliers)."
+                }
+            ]
+        },
+        {
+            "key": "section6",
+            "title": "ATELIER MÉCANIQUE DE L'USINE DE PÂTES ET PAPIERS (P21)",
+            "fields": [
+                {
+                    "title": "Propreté générale du secteur inspecté",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection9",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section6",
+                    "sectionTitle": "ATELIER MÉCANIQUE DE L'USINE DE PÂTES ET PAPIERS (P21)",
+                    "comment": "L'atelier mécanique de l'usine est dans un état acceptable : copeaux et poussières de meulage balayés, aucun déversement d'huile de réducteur sur le béton, bacs d'égouttement sous les établis. Les pièces en attente de montage (lames de déchiqueteur, racleurs de presse) sont hors des allées de circulation. Les absorbants et le kit déversement sont au complet près de la porte sud."
+                },
+                {
+                    "title": "Bacs de déchets industriels, solides contaminés aux huiles et aérosols d'entretien",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection10",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section6",
+                    "sectionTitle": "ATELIER MÉCANIQUE DE L'USINE DE PÂTES ET PAPIERS (P21)",
+                    "comment": "Les bacs de déchets industriels, solides contaminés aux huiles et aérosols d'entretien sont bien triés et fermés. Les bombes de dégraissant usagées sont dans le contenant dédié, pas mélangées aux chiffons. Les étiquettes de contenu sont lisibles. Le bac de solides huileux n'est pas plein et pourra attendre la prochaine tournée vers l'entrepôt MDR sans risque de trop-plein."
+                }
+            ]
+        },
+        {
+            "key": "section7",
+            "title": "AIRE DE TRI DES DÉCHETS ET DE RÉCUPÉRATION (extérieur nord, près du parc à écorces)",
+            "fields": [
+                {
+                    "title": "Conteneur de ferraille et de pièces métalliques usées des équipements",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection11",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section7",
+                    "sectionTitle": "AIRE DE TRI DES DÉCHETS ET DE RÉCUPÉRATION (extérieur nord, près du parc à écorces)",
+                    "comment": "Le conteneur de ferraille (tôles, boyaux métalliques, pièces usées de presses et de raffineurs) est rempli sous la ligne de remplissage, sans débordement au sol. Aucun filtre à huile ni contenant chimique n'a été jeté avec le métal. L'aire autour du roll-off est balayée, sans copeaux mêlés à la ferraille, ce qui facilite l'enlèvement par le récupérateur."
+                },
+                {
+                    "title": "Conteneur de courroies, joints et caoutchoucs usés des presses et raffineurs",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection12",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section7",
+                    "sectionTitle": "AIRE DE TRI DES DÉCHETS ET DE RÉCUPÉRATION (extérieur nord, près du parc à écorces)",
+                    "comment": "Le conteneur de courroies, joints et caoutchoucs usés des presses et raffineurs est conforme : matériaux secs, pas de contamination visible par de la liqueur ou de l'huile. Le couvercle ferme correctement malgré le vent du parc à écorces. Une prochaine collecte est prévue ; le niveau actuel laisse encore de la marge."
+                },
+                {
+                    "title": "Conteneur de bois d'emballage, palettes et chutes de copeaux",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection13",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section7",
+                    "sectionTitle": "AIRE DE TRI DES DÉCHETS ET DE RÉCUPÉRATION (extérieur nord, près du parc à écorces)",
+                    "comment": "Le conteneur de bois d'emballage, palettes et chutes de copeaux est bien utilisé. Les palettes cassées ne traînent pas à côté, et aucun bois traité ou souillé d'huile de machine n'a été observé dans le lot. L'accumulation reste sous le bord supérieur, ce qui évite que le vent du nord n'éparpille des planches vers le fossé d'eaux pluviales."
+                },
+                {
+                    "title": "Conteneur de déchets domestiques des salles de pause et salles de contrôle",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection14",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section7",
+                    "sectionTitle": "AIRE DE TRI DES DÉCHETS ET DE RÉCUPÉRATION (extérieur nord, près du parc à écorces)",
+                    "comment": "Le conteneur de déchets domestiques des salles de pause et salles de contrôle est fermé, sans débordement ni odeur anormale. Aucun déchet industriel (chiffons huileux, piles, aérosols) n'y a été repéré. Le sol autour est propre. La fréquence d'enlèvement actuelle suffit pour le quart de jour."
+                },
+                {
+                    "title": "Conteneur de câbles et fils électriques hors d'usage",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection15",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section7",
+                    "sectionTitle": "AIRE DE TRI DES DÉCHETS ET DE RÉCUPÉRATION (extérieur nord, près du parc à écorces)",
+                    "comment": "Le conteneur de câbles et fils électriques hors d'usage (armoires de la machine à papier, capteurs de la cour à bois) est isolé du métal ordinaire. Les extrémités ne traînent pas au sol. Pas de transformateur ni d'équipement suspecté de BPC. L'identification « fils / cuivre » sur la paroi reste lisible."
+                },
+                {
+                    "title": "Conteneur Amnor pour sacs vides de métabisulfite de sodium (près de l'atelier de blanchiment, P40)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection16",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section7",
+                    "sectionTitle": "AIRE DE TRI DES DÉCHETS ET DE RÉCUPÉRATION (extérieur nord, près du parc à écorces)",
+                    "comment": "Le conteneur Amnor des sacs vides de métabisulfite de sodium, près de l'atelier de blanchiment (P40), est fermé et à l'abri de la pluie. Les sacs sont pliés, sans résidu pulvérulent important sur le rebord. Aucun sac plein ni produit encore utilisable n'a été jeté par erreur. L'aire de chargement est sèche, sans trace blanche vers le regard d'eaux pluviales."
+                },
+                {
+                    "title": "Conteneur Amnor (roll-off) de sols contaminés aux huiles, liqueurs et produits de blanchiment",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection17",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section7",
+                    "sectionTitle": "AIRE DE TRI DES DÉCHETS ET DE RÉCUPÉRATION (extérieur nord, près du parc à écorces)",
+                    "comment": "Le roll-off Amnor de sols contaminés (huiles, liqueurs et produits de blanchiment) est bâché, sans suintement visible aux joints. Le niveau de remplissage permet encore un quart de chargement. Aucun dépôt n'a été constaté au pied du conteneur. L'étiquette de matières contaminées et le numéro de lot interne sont en place pour le prochain enlèvement."
+                }
+            ]
+        },
+        {
+            "key": "section8",
+            "title": "ENTREPOSAGE DES MATIÈRES DANGEREUSES DE PROCÉDÉ (P21)",
+            "fields": [
+                {
+                    "title": "Propreté générale du secteur inspecté",
+                    "description": "Requiert attention",
+                    "type": "STATUS",
+                    "status": "NEEDS_ATTENTION",
+                    "rawStatus": "needsAttention",
+                    "fieldKey": "inspection18",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "pictures": [
+                        "c9630b0e-0c76-4596-9dd6-56f4046da732"
+                    ],
+                    "comment": "Des bacs de rétention supplémentaires seraient nécessaires dès maintenant pour contenir les fûts d'huiles usées et de produits chimiques de blanchiment entreposés temporairement près de la machine à papier, en attendant leur transport vers l'entrepôt des matières résiduelles dangereuses. Plusieurs contenants reposent directement au sol sans cuvette, ce qui présente un risque de déversement vers le réseau d'eaux de procédé et le parc à écorces. Il est recommandé d'installer des bacs de rétention dimensionnés selon le plus gros contenant avant la prochaine rotation du transporteur autorisé, et de consigner l'action dans le registre environnemental de l'usine.",
+                    "sectionKey": "section8",
+                    "sectionTitle": "ENTREPOSAGE DES MATIÈRES DANGEREUSES DE PROCÉDÉ (P21)"
+                },
+                {
+                    "title": "Bac de solides contaminés, aérosols d'entretien et ampoules usagées de l'atelier",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection19",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section8",
+                    "sectionTitle": "ENTREPOSAGE DES MATIÈRES DANGEREUSES DE PROCÉDÉ (P21)",
+                    "comment": "Le bac de solides contaminés, aérosols d'entretien et ampoules usagées de l'atelier (P21) est conforme : compartiments distincts, couvercles rabattus, pas de mélange avec les ordures ménagères. Les ampoules fluorescentes sont dans le contenant rigide prévu. Le bac n'est pas saturé. Rien à signaler pour le transport vers l'entrepôt MDR cette semaine."
+                }
+            ]
+        },
+        {
+            "key": "section9",
+            "title": "ENTREPÔT D'HUILES NEUVES (près de l'infirmerie et du vestiaire de l'usine)",
+            "fields": [
+                {
+                    "title": "Propreté générale du secteur inspecté",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection20",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section9",
+                    "sectionTitle": "ENTREPÔT D'HUILES NEUVES (près de l'infirmerie et du vestiaire de l'usine)",
+                    "comment": "L'entrepôt d'huiles neuves près de l'infirmerie et du vestiaire est propre et ordonné. Les allées permettent de sortir un fût sans le faire rouler sur le seuil. Aucune odeur d'hydrocarbure stagnante, pas de film d'huile sur le béton. L'éclairage et l'affichage des FDS près de la porte sont en bon état."
+                },
+                {
+                    "title": "Bidons, barils et bacs de rétention des huiles de lubrification des machines",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection21",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section9",
+                    "sectionTitle": "ENTREPÔT D'HUILES NEUVES (près de l'infirmerie et du vestiaire de l'usine)",
+                    "comment": "Bidons, barils et bacs de rétention des huiles de lubrification sont en bon état : cuvettes vides de liquide accumulé, parois sans perforation, robinets fermés. Les contenants vides sont entreposés bouchon vers le haut, à part des pleins. La capacité de rétention du plus gros fût de 205 L est respectée dans chaque îlot."
+                },
+                {
+                    "title": "Absorbants d'urgence disponibles et en quantité suffisante en cas de déversement",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection22",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section9",
+                    "sectionTitle": "ENTREPÔT D'HUILES NEUVES (près de l'infirmerie et du vestiaire de l'usine)",
+                    "comment": "Les absorbants d'urgence (sacs de tourbe, boudins, feuilles hydrophobes) sont présents en quantité suffisante près de l'entrepôt d'huiles et près de la machine à papier. Les sacs ouverts ont été refermés. Le contenu du kit déversement a été vérifié : gants, lunettes et sacs pour déchets souillés sont au complet. Rien à réapprovisionner aujourd'hui."
+                }
+            ]
+        },
+        {
+            "key": "section10",
+            "title": "CUVES AGITATRICES DE LIQUEUR NOIRE (extérieur, secteur lessive)",
+            "fields": [
+                {
+                    "title": "Accumulation de solides dans les bassins de décantation des eaux de procédé (oui ou non)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection23",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section10",
+                    "sectionTitle": "CUVES AGITATRICES DE LIQUEUR NOIRE (extérieur, secteur lessive)",
+                    "comment": "Les bassins de décantation des eaux de procédé, côté cuves agitatrices de liqueur noire, ne montrent pas d'accumulation anormale de solides en surface. Les agitateurs tournent, aucune croûte épaisse ni odeur inhabituelle de fermentation. Les passerelles sont dégagées. Un léger voile de fibres est normal en sortie d'atelier de pâte et ne justifie pas un curage cette semaine."
+                }
+            ]
+        },
+        {
+            "key": "section11",
+            "title": "RÉSERVOIRS DE PRODUITS CHIMIQUES DE PROCÉDÉ",
+            "fields": [
+                {
+                    "title": "Carbonate de calcium liquide — secteur préparation de pâte (près PC2)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection24",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section11",
+                    "sectionTitle": "RÉSERVOIRS DE PRODUITS CHIMIQUES DE PROCÉDÉ",
+                    "comment": "Le réservoir de carbonate de calcium liquide au secteur préparation de pâte (près PC2) est étanche, cuve de rétention sèche, échelle et garde-corps en place. Le niveau visuel correspond à l'indication en salle de contrôle. Aucun dépôt blanchâtre hors de l'aire de confinement. Les flexibles de transfert vers le mélangeur sont rincés et rangés."
+                },
+                {
+                    "title": "Chaux vive — sud de l'usine, près du four à chaux et du recausticage (P8)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection25",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section11",
+                    "sectionTitle": "RÉSERVOIRS DE PRODUITS CHIMIQUES DE PROCÉDÉ",
+                    "comment": "Le silo et l'aire de chaux vive au sud de l'usine, près du four à chaux et du recausticage (P8), sont propres pour un secteur poussiéreux : bâches en place, pas de tas de chaux hors confinement, caniveau de collecte dégagé. Les opérateurs confirment l'absence de fuite au déchargement du dernier camion. L'affichage de danger (base forte, poussières) est lisible."
+                },
+                {
+                    "title": "Chaux — secteur des convoyeurs de copeaux et de l'alimentation des lessiveurs (près P35)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection26",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section11",
+                    "sectionTitle": "RÉSERVOIRS DE PRODUITS CHIMIQUES DE PROCÉDÉ",
+                    "comment": "L'entreposage de chaux au secteur des convoyeurs de copeaux et de l'alimentation des lessiveurs (P35) est conforme. Pas de sac déchiré le long du convoyeur, pas de laitance vers les fosses à écorces. La zone de transbordement a été balayée après la dernière livraison. Les extincteurs du secteur restent accessibles malgré les piles de big-bags."
+                }
+            ]
+        },
+        {
+            "key": "section13",
+            "title": "POSTE DE GARDE ET BARRIÈRE D'ACCÈS AU SITE DE L'USINE",
+            "fields": [
+                {
+                    "title": "Propreté générale du secteur inspecté",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection27",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section13",
+                    "sectionTitle": "POSTE DE GARDE ET BARRIÈRE D'ACCÈS AU SITE DE L'USINE",
+                    "comment": "Le poste de garde et l'aire de la barrière d'accès au site sont propres : pas de déchets, pas de flaque d'huile de camions de copeaux sur le bitume. Le bac à sel et le matériel de déneigement sont rangés hors saison. L'éclairage de la barrière fonctionne. Rien qui nuise à l'accueil des transporteurs de produits chimiques."
+                },
+                {
+                    "title": "Entreposage conforme des matières résiduelles dangereuses (MDR)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection28",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section13",
+                    "sectionTitle": "POSTE DE GARDE ET BARRIÈRE D'ACCÈS AU SITE DE L'USINE",
+                    "comment": "Aucun entreposage temporaire de matières résiduelles dangereuses n'est en cours au poste de garde. La consigne (pas de barils ni de bacs MDR hors de l'entrepôt dédié) est affichée et respectée. Les chauffeurs de camions-citernes attendent à l'intérieur de l'enceinte, sans déposer de contenants le long de la clôture."
+                }
+            ]
+        },
+        {
+            "key": "section14",
+            "title": "ATELIER D'ENTRETIEN DE L'USINE (garage P38 et P40)",
+            "fields": [
+                {
+                    "title": "Conteneurs ouverts longeant le bâtiment de l'atelier d'entretien",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection29",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section14",
+                    "sectionTitle": "ATELIER D'ENTRETIEN DE L'USINE (garage P38 et P40)",
+                    "comment": "Les conteneurs ouverts longeant le bâtiment de l'atelier d'entretien (P38-P40) sont utilisés pour le tri prévu (bois, métal, non contaminé). Aucun mélange de solides huileux avec les déchets secs. Le sol le long du mur a été nettoyé des copeaux. Les couvercles partiels limitent l'envolée de papiers vers le parc à écorces par vent d'ouest."
+                },
+                {
+                    "title": "Propreté générale du secteur inspecté",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection30",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section14",
+                    "sectionTitle": "ATELIER D'ENTRETIEN DE L'USINE (garage P38 et P40)",
+                    "comment": "La propreté générale de l'atelier d'entretien est satisfaisante : fosses visiblement sèches, pas de film d'huile vers le séparateur, outils et pièces de la machine à papier hors des drains. Un nettoyage des gouttières intérieures a eu lieu en début de semaine. Les poubelles d'atelier ne débordent pas."
+                },
+                {
+                    "title": "Entreposage conforme des matières résiduelles dangereuses (MDR)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection31",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section14",
+                    "sectionTitle": "ATELIER D'ENTRETIEN DE L'USINE (garage P38 et P40)",
+                    "comment": "L'entreposage MDR à l'atelier d'entretien se limite aux bacs autorisés, tous fermés et étiquetés, en attente du transfert vers l'entrepôt central. Pas de fût de solvant hors rétention. La quantité sur place reste sous le seuil interne de 48 h. Le personnel de mécanique connaît le chemin vers l'entrepôt MDR et le registre d'entrée."
+                },
+                {
+                    "title": "Aires d'entreposage au sud, près de la machine à papier",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection32",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "pictures": [
+                        "16495933-51e9-44aa-8247-00e352d55161"
+                    ],
+                    "sectionKey": "section14",
+                    "sectionTitle": "ATELIER D'ENTRETIEN DE L'USINE (garage P38 et P40)",
+                    "comment": "Les aires d'entreposage au sud, près de la machine à papier, sont dégagées : rouleaux, toiles et pièces en attente sur supports, pas de produit chimique hors bac. Le passage pompiers le long du bâtiment reste libre. Quelques copeaux apportés par le vent ont été balayés pendant la tournée. Photo jointe pour documenter l'état après le ménage de quart."
+                },
+                {
+                    "title": "Conteneurs maritimes de pièces de rechange et de produits chimiques de procédé",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection33",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section14",
+                    "sectionTitle": "ATELIER D'ENTRETIEN DE L'USINE (garage P38 et P40)",
+                    "comment": "Les conteneurs maritimes de pièces de rechange et de produits chimiques de procédé sont cadenassés, sans corrosion perforante visible sur les seuils. Les produits (antimoisissure, biocide, additifs de rétention) restent sur palettes dans des bacs. L'inventaire à la porte correspond aux lots déclarés. Aucune odeur de solvant à l'ouverture éclair de la porte."
+                }
+            ]
+        },
+        {
+            "key": "section15",
+            "title": "DÉCHIQUETEUR ET COUR À BOIS (PC1)",
+            "fields": [
+                {
+                    "title": "Propreté générale du secteur inspecté",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection34",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section15",
+                    "sectionTitle": "DÉCHIQUETEUR ET COUR À BOIS (PC1)",
+                    "comment": "La cour à bois et le secteur du déchiqueteur (PC1) sont acceptables pour une aire à ciel ouvert : tas de copeaux dans les limites des murs, pas de déversement d'huile hydraulique sous le déchiqueteur, fossés d'eaux pluviales non obstrués par les écorces. Les fuites d'huile connues du vérin ont été essuyées. Circulation des chargeuses balisée."
+                },
+                {
+                    "title": "Bac de solides contaminés et poubelles de la cour à bois et du déchiqueteur",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection35",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section15",
+                    "sectionTitle": "DÉCHIQUETEUR ET COUR À BOIS (PC1)",
+                    "comment": "Le bac de solides contaminés et les poubelles de la cour à bois / déchiqueteur sont en place, couvercles fonctionnels malgré la poussière d'écorces. Les chiffons huileux de l'entretien du déchiqueteur vont bien dans le bac contaminé, pas dans les ordures. Niveau de remplissage correct. Prochain transfert vers l'entrepôt MDR prévu avec la tournée de l'atelier mécanique."
+                }
+            ]
+        },
+        {
+            "key": "section17",
+            "title": "GARAGE DES VÉHICULES ET ENGINS D'USINE",
+            "fields": [
+                {
+                    "title": "Réservoir d'huile usée des équipements mobiles (entre vestiaire et garage)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection36",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section17",
+                    "sectionTitle": "GARAGE DES VÉHICULES ET ENGINS D'USINE",
+                    "comment": "Le réservoir d'huile usée des équipements mobiles, entre vestiaire et garage, est étanche : niveau dans la plage verte, bac de rétention sec, évent dégagé. Le pistolet de vidange ne goutte pas. L'affichage « huile usée — MDR » et le numéro d'urgence sont lisibles. Pas de remplissage excessif avant la collecte du transporteur."
+                },
+                {
+                    "title": "Réservoir de diesel des chargeuses et camions de copeaux (entre vestiaire et garage)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection37",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "pictures": [
+                        "a1670143-3a7a-4bbc-bea0-4dc57d2354c4"
+                    ],
+                    "sectionKey": "section17",
+                    "sectionTitle": "GARAGE DES VÉHICULES ET ENGINS D'USINE",
+                    "comment": "Le réservoir de diesel des chargeuses et camions de copeaux (entre vestiaire et garage) ne présente pas de suintement aux brides ni au pistolet. La cuve de rétention est vide d'eau de pluie (drain vérifié). L'extincteur et le bac absorbant du poste de remplissage sont en place. Photo jointe du poste après inspection visuelle."
+                }
+            ]
+        },
+        {
+            "key": "section18",
+            "title": "SÉPARATEUR EAU-HUILE DU RÉSEAU D'EAUX HUILÉES DE L'USINE",
+            "fields": [
+                {
+                    "title": "Totalisateur d'eau potable du séparateur (lecture estivale)",
+                    "description": "Non-inspecté",
+                    "type": "STATUS",
+                    "rawStatus": "notInspected",
+                    "fieldKey": "inspection38",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section18",
+                    "sectionTitle": "SÉPARATEUR EAU-HUILE DU RÉSEAU D'EAUX HUILÉES DE L'USINE",
+                    "comment": "Non inspecté : le totalisateur d'eau potable du séparateur eau-huile n'est relevé qu'en période estivale, lorsque le réseau d'eaux huilées du garage et de l'atelier est en mode lavage à grand débit. En août, le compteur est hors circuit pour entretien de la cellule coalescente. La lecture reprendra après le redémarrage prévu la semaine prochaine ; aucun indice de fuite autour du séparateur n'a toutefois été noté en passant."
+                }
+            ]
+        },
+        {
+            "key": "section20",
+            "title": "ENTREPÔT DES MATIÈRES RÉSIDUELLES DANGEREUSES (MDR) DE L'USINE",
+            "fields": [
+                {
+                    "title": "Registre des envois de matériel dangereux vers le transporteur autorisé",
+                    "description": "Requiert attention",
+                    "type": "STATUS",
+                    "status": "NEEDS_ATTENTION",
+                    "rawStatus": "needsAttention",
+                    "fieldKey": "inspection39",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "comment": "Un nouveau registre d'expédition des matières résiduelles dangereuses est nécessaire : le registre actuel de l'entrepôt MDR est saturé et plusieurs envois de barils d'huiles usées, de liqueur noire résiduelle et de sacs vides de métabisulfite n'y figurent plus de façon lisible. Sans registre à jour, le suivi réglementaire des sorties vers le transporteur autorisé ne peut plus être démontré lors d'une inspection ministérielle. Il faut remplacer le registre dès que possible, reporter les dernières expéditions encore en cours et former le personnel de l'atelier d'entretien à la nouvelle procédure de consignation.",
+                    "sectionKey": "section20",
+                    "sectionTitle": "ENTREPÔT DES MATIÈRES RÉSIDUELLES DANGEREUSES (MDR) DE L'USINE"
+                },
+                {
+                    "title": "Étiquetage SIMDUT des barils et bacs de matières résiduelles dangereuses",
+                    "description": "Requiert attention",
+                    "type": "STATUS",
+                    "status": "NEEDS_ATTENTION",
+                    "rawStatus": "needsAttention",
+                    "fieldKey": "inspection40",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "pictures": [
+                        "adc30b07-449f-492f-8b09-fc1a69145350",
+                        "8b32445d-8c32-4be1-899f-127836d9a61f"
+                    ],
+                    "comment": "Les étiquettes SIMDUT commandées pour les bacs de l'entrepôt des matières résiduelles dangereuses n'ont toujours pas été reçues du fournisseur. Un bac de solides contaminés aux huiles de lubrification des raffineurs et de la machine à papier demeure sans étiquette, ce qui compromet l'identification du contenu et le tri avant l'expédition. En attendant la livraison, une étiquette temporaire doit être apposée, le bac isolé des autres contenants déjà identifiés, et le retard signalé au coordonnateur environnement de l'usine.",
+                    "sectionKey": "section20",
+                    "sectionTitle": "ENTREPÔT DES MATIÈRES RÉSIDUELLES DANGEREUSES (MDR) DE L'USINE"
+                },
+                {
+                    "title": "Propreté générale du secteur inspecté",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection41",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section20",
+                    "sectionTitle": "ENTREPÔT DES MATIÈRES RÉSIDUELLES DANGEREUSES (MDR) DE L'USINE",
+                    "comment": "La propreté générale de l'entrepôt des matières résiduelles dangereuses est bonne : plancher balayé, pas de flaque sous les bacs, allées libres jusqu'aux portes coupe-feu. Les absorbants du coin déversement sont secs et empilés. L'odeur d'hydrocarbure reste faible, cohérente avec des fûts fermés. Rien à corriger de ce côté malgré les écarts d'étiquetage et de registre ailleurs dans le même bâtiment."
+                },
+                {
+                    "title": "Entreposage conforme des matières résiduelles dangereuses (MDR)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection42",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section20",
+                    "sectionTitle": "ENTREPÔT DES MATIÈRES RÉSIDUELLES DANGEREUSES (MDR) DE L'USINE",
+                    "comment": "L'entreposage des MDR dans l'entrepôt dédié respecte la séparation des familles (huiles usées, solides contaminés, résidus de blanchiment, piles). Les bacs sont sur rétention, gerbage limité à la hauteur permise. Les quantités restent sous le seuil déclaré au plan de gestion. Seuls le registre et certaines étiquettes posent problème, traités aux points d'inspection correspondants."
+                },
+                {
+                    "title": "Accès à l'entrepôt MDR (cadenassé, déneigé et dégagé)",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection43",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section20",
+                    "sectionTitle": "ENTREPÔT DES MATIÈRES RÉSIDUELLES DANGEREUSES (MDR) DE L'USINE",
+                    "comment": "L'accès à l'entrepôt MDR est cadenassé, la clé est au poste de garde selon la consigne, et l'allée est dégagée (pas de neige à cette date, pas de palettes devant la porte). L'éclairage extérieur fonctionne. Les transporteurs peuvent reculer au quai sans empiéter sur le fossé d'eaux pluviales. Le cadenas et le loquet ont été essayés en fin de tournée."
+                },
+                {
+                    "title": "Identification, pictogrammes et affichage réglementaire en place",
+                    "description": "Conforme",
+                    "type": "STATUS",
+                    "status": "COMPLIANT",
+                    "rawStatus": "compliant",
+                    "fieldKey": "inspection44",
+                    "enableComment": true,
+                    "enableLocation": false,
+                    "statusOptions": [
+                        {
+                            "color": "#43A047",
+                            "label": "Conforme",
+                            "value": "compliant",
+                            "enableEventCreation": false
+                        },
+                        {
+                            "color": "#FDD835",
+                            "label": "Requiert attention",
+                            "value": "needsAttention",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#E53935",
+                            "label": "Non-conforme",
+                            "value": "urgentActionRequired",
+                            "enableEventCreation": true
+                        },
+                        {
+                            "color": "#9E9E9E",
+                            "label": "Non-inspecté",
+                            "value": "notInspected",
+                            "enableEventCreation": false
+                        }
+                    ],
+                    "sectionKey": "section20",
+                    "sectionTitle": "ENTREPÔT DES MATIÈRES RÉSIDUELLES DANGEREUSES (MDR) DE L'USINE",
+                    "comment": "L'identification, les pictogrammes SIMDUT et l'affichage réglementaire de l'entrepôt MDR sont en place sur les portes et les îlots. Les panneaux de danger (inflammable, corrosif) restent lisibles. Le plan d'intervention déversement est affiché près de l'extincteur. Seule l'étiquette manquante sur un bac (voir le point d'inspection dédié) sort de cette conformité générale d'affichage."
+                }
+            ]
+        },
+        {
+            "key": "section21",
+            "title": "Commentaires et observations de terrain",
+            "fields": [
+                {
+                    "title": "Commentaires #1 — Observations générales du tour d'inspection",
+                    "description": "",
+                    "type": "TEXT_ANSWER",
+                    "textAnswer": "Des travaux de réfection de la dalle de béton sont en cours entre le quai de l'entrepôt de pièces et l'atelier d'entretien de l'usine de pâtes et papiers. L'accès des chariots élévateurs vers la cour à bois et le secteur de la machine à papier est partiellement restreint; les déplacements de barils, de bacs de rétention et de sacs de produits chimiques doivent emprunter le chemin de contournement le long du parc à écorces. Un balisage temporaire est en place, mais il faudra prévoir un nettoyage des résidus de copeaux, d'écorces et d'huile à la fin des travaux avant de rétablir la circulation habituelle entre les deux bâtiments.",
+                    "fieldKey": "repeatable1[0].text1",
+                    "sectionKey": "section21",
+                    "sectionTitle": "Commentaires et observations de terrain",
+                    "rowIndex": 0
+                }
+            ]
+        }
+    ]
+}

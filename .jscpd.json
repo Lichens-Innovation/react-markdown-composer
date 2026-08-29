@@ -1,0 +1,7 @@
+{
+  "path": ["src"],
+  "ignore": ["tests/fixtures/**", "dist/**", "node_modules/**", "src/index.css", "src/api/generated/**", "src/components/ui/**"],
+  "threshold": 0,
+  "minLines": 15,
+  "minTokens": 50
+}

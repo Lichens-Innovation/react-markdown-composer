@@ -1,0 +1,20 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "tags": ["-lintignore"],
+  "rules": {
+    "exports": "warn"
+  },
+  "entry": ["src/index.ts"],
+  "ignore": ["commitlint.config.js"],
+  "ignoreBinaries": ["habit-hooks", "habit-snooze"],
+  "ignoreDependencies": [
+    "@commitlint/config-conventional",
+    "@semantic-release/github",
+    "jscpd",
+    "lint-staged",
+    "ts-morph",
+    "@testing-library/dom",
+    "@testing-library/react",
+    "@testing-library/user-event"
+  ]
+}
