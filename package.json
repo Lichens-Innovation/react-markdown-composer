@@ -1,6 +1,6 @@
 {
   "name": "@lichens-innovation/react-markdown-composer",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Reusable React component for composing markdown.",
   "author": "Lichens Innovation",
   "license": "MIT",
