@@ -1,4 +1,5 @@
-| Info                 | Valeur saisie            |
+<!--columns: 35% 65% -->
+| Info                 | Valeur saisie.           |
 |----------------------|--------------------------|
 | Inspecté par         | **{{formData.text1}}**   |
 | Fonction             | **{{formData.select1}}** |
@@ -8,6 +9,7 @@
 {{#each sections}}
 {{#if (hasType fields "STATUS")}}
 <!--keep-->
+<!--columns: 30% 20% 50% -->
 | {{title}} | Statut | Commentaire |
 |-----------|--------|-------------|
 {{#each fields~}}

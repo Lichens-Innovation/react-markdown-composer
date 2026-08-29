@@ -16,7 +16,7 @@ interface UseCodemirrorMarkdownEditorResult {
 }
 
 const editorLayoutTheme = EditorView.theme({
-  "&": { height: "100%" },
+  "&": { height: "100%", fontSize: "12px" },
   ".cm-scroller": { overflow: "auto" },
 });
 
