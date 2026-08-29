@@ -11,10 +11,12 @@ Reusable React component for composing markdown.
 - [react-markdown-composer](#react-markdown-composer)
   - [Installation](#installation)
   - [Development](#development)
-  - [All Scripts](#all-scripts)
+    - [All Scripts](#all-scripts)
+  - [Project coding guidelines](#project-coding-guidelines)
   - [Contributions](#contributions)
   - [Library semantic versioning](#library-semantic-versioning)
   - [License](#license)
+  - [References](#references)
 
 ## Installation
 
@@ -60,6 +62,12 @@ Starts the Vite playground on http://localhost:3000 and opens `MarkdownComposer`
 | `bun test:coverage`     | Runs tests with a Vitest coverage report                                                       |
 | `bun test:crap`         | Runs tests with coverage, then generates a CRAP score report (`crap-report/`)                  |
 
+## Project coding guidelines
+
+Adhering to established coding guidelines is essential for developing efficient, maintainable, and scalable software. These guidelines promote consistency across codebases, making it easier for teams to collaborate and for new developers to understand existing code. By following standardized patterns, such as those outlined in the [Coding guidelines](https://github.com/amwebexpert/chrome-extensions-collection/blob/master/packages/coding-guide-helper/public/markdowns/table-of-content.md), developers can reduce errors and enhance code readability.
+
+- [Coding guidelines](https://github.com/amwebexpert/chrome-extensions-collection/blob/master/packages/coding-guide-helper/public/markdowns/table-of-content.md)
+
 ## Contributions
 
 Contributions to the project are made by improving the current codebase and then creating a Pull Request. When the PR is merged into `main`, the CI pipeline runs automatically. [semantic-release](https://semantic-release.gitbook.io/) determines the next version from conventional commit messages, updates `CHANGELOG.md` and `package.json`, and publishes the new version — no manual version bump required.
@@ -79,3 +87,7 @@ Follow [Semantic Versioning](https://semver.org/#summary) (`MAJOR.MINOR.PATCH`) 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## References
+
+- [habit-hooks](https://habit-hooks.com/)
