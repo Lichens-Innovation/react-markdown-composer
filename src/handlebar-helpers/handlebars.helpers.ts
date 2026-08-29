@@ -52,6 +52,7 @@ export interface RegisterHandlebarsHelpersArgs {
 
 export const registerHandlebarsHelpers = ({ handlebars, translate }: RegisterHandlebarsHelpersArgs): void => {
   handlebars.registerHelper("statusColor", simpleMapper);
+  handlebars.registerHelper("simpleMapper", simpleMapper);
   handlebars.registerHelper("concat", concatHelper);
   handlebars.registerHelper("eq", eqHelper);
   handlebars.registerHelper("hasType", hasTypeHelper);
