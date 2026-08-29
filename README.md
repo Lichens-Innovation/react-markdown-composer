@@ -20,6 +20,18 @@ Reusable React component for composing markdown.
 
 ## Installation
 
+```bash
+bun add @lichens-innovation/react-markdown-composer
+```
+
+Peer dependencies (install in the host app): `antd`, `react`, `react-dom`.
+
+```tsx
+import { MarkdownComposer } from "@lichens-innovation/react-markdown-composer";
+```
+
+## Development
+
 Install [Bun](https://bun.sh/docs/installation) 1.4+ (see `packageManager` in `package.json`), then:
 
 ```bash
@@ -31,8 +43,6 @@ Install [habit-hooks](https://github.com/habit-hooks/habit-hooks) (Python 3.11+)
 ```bash
 uv tool install "habit-hooks[typescript]"  # pip, pipx or brew also work
 ```
-
-## Development
 
 ```bash
 bun start
@@ -56,7 +66,7 @@ Starts the Vite playground on http://localhost:3000 and opens `MarkdownComposer`
 | `bun habit:snoozed`     | Lists the currently snoozed habit-hooks findings (`.habit-hooks/snooze.json`)                  |
 | `bun format`            | Formats all files using Prettier according to .prettierrc rules                                |
 | `bun format:check`      | Checks if files are formatted according to Prettier rules                                      |
-| `bun build`             | Cleans `dist`, then type-checks (`tsc -b`)                                                     |
+| `bun build`             | Cleans `dist`, then Vite library build (`src/index.ts` → `dist/`)                            |
 | `bun test`              | Runs tests using Vitest                                                                        |
 | `bun test:eslint-rules` | Runs unit tests for custom ESLint rules (`eslint-rules/`)                                      |
 | `bun test:coverage`     | Runs tests with a Vitest coverage report                                                       |

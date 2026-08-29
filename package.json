@@ -6,6 +6,23 @@
   "license": "MIT",
   "repository": "https://github.com/Lichens-Innovation/react-markdown-composer",
   "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": [
+    "**/*.css",
+    "./dist/index.js"
+  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -16,8 +33,7 @@
   },
   "packageManager": "bun@1.4.0",
   "scripts": {
-    "postinstall": "patch-package",
-    "prepare": "husky",
+    "prepare": "husky && patch-package",
     "clean:node": "rimraf node_modules bun.lock",
     "start": "vite dev",
     "generate:version": "tsx scripts/generate-version.ts",
@@ -31,7 +47,7 @@
     "format:check": "prettier --check .",
     "habit:hooks": "habit-hooks --branch main",
     "habit:snoozed": "habit-snooze --list",
-    "build": "rimraf dist && tsc -b",
+    "build": "rimraf dist && vite build",
     "test": "vitest",
     "test:eslint-rules": "vitest run eslint-rules",
     "test:coverage": "vitest run --coverage",
@@ -94,6 +110,7 @@
     "tsx": "4.23.12",
     "typescript": "6.0.3",
     "typescript-eslint": "8.68.0",
+    "unplugin-dts": "1.0.3",
     "vite": "8.2.2",
     "vitest": "4.1.11"
   },
