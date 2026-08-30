@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.2.0...v1.3.0) (2026-08-30)
+
+
+### Features
+
+* **table:** default table styles ([704f5b2](https://github.com/Lichens-Innovation/react-markdown-composer/commit/704f5b2e5366c371126c18430398e5b1cd2b38b3))
+* **template:** automatic html comments cleanup ([7215071](https://github.com/Lichens-Innovation/react-markdown-composer/commit/721507150dff7d0a8a47feded45373b9b77069cc))
+* **theme:** improve rendering theme ([f981a46](https://github.com/Lichens-Innovation/react-markdown-composer/commit/f981a46217202b2101ca094be32ebb511f5e1ee6))
+
 # [1.2.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.1.3...v1.2.0) (2026-08-30)
 
 
