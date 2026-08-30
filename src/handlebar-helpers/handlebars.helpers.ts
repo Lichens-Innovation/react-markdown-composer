@@ -1,5 +1,8 @@
+/* eslint-disable @typescript-eslint/max-params */
 import Handlebars from "handlebars";
 
+import { isBlank } from "@lichens-innovation/ts-common";
+import { format, parseISO } from "date-fns";
 import type { RenderTemplate, TranslateTemplate } from "../markdown-composer.types";
 import { markdownImagesTableHelper } from "./markdown-images-table.helper";
 
@@ -17,6 +20,13 @@ const isHelperOptions = (value: unknown): value is Handlebars.HelperOptions => {
   }
 
   return true;
+};
+
+const formatDateHelper = (date?: string, dateFormat?: unknown): string => {
+  if (isBlank(date)) return "";
+
+  const targetFormat = typeof dateFormat === "string" ? dateFormat : "yyyy-MM-dd HH:mm";
+  return format(parseISO(date), targetFormat);
 };
 
 export const concatHelper = (...args: unknown[]): string => args.slice(0, -1).join("");
@@ -43,6 +53,27 @@ export const simpleMapper = (key: string, mapper: Record<string, string> = {}): 
   return mapper[key] ?? "";
 };
 
+const translationHelperBuilder =
+  (translate: TranslateTemplate) =>
+  // eslint-disable-next-line project/max-params
+  (
+    key: string,
+    optionsOrArgs?: Record<string, unknown> | Handlebars.HelperOptions,
+    maybeOptions?: Handlebars.HelperOptions
+  ): string => {
+    if (typeof key !== "string" || isBlank(key)) return "";
+
+    const helperOptions = maybeOptions ?? (isHelperOptions(optionsOrArgs) ? optionsOrArgs : undefined);
+
+    const positionalArgs = optionsOrArgs !== null && optionsOrArgs !== helperOptions ? optionsOrArgs : undefined;
+
+    if (positionalArgs !== null && typeof positionalArgs === "object") {
+      return translate(key, positionalArgs as Record<string, unknown>);
+    }
+
+    return translate(key, helperOptions?.hash ?? {});
+  };
+
 const DEFAULT_TRANSTATOR: TranslateTemplate = (key) => key;
 
 export interface RegisterHandlebarsHelpersArgs {
@@ -56,7 +87,8 @@ export const registerHandlebarsHelpers = ({ handlebars, translate }: RegisterHan
   handlebars.registerHelper("concat", concatHelper);
   handlebars.registerHelper("eq", eqHelper);
   handlebars.registerHelper("hasType", hasTypeHelper);
-  handlebars.registerHelper("t", translate ?? DEFAULT_TRANSTATOR);
+  handlebars.registerHelper("t", translate ? translationHelperBuilder(translate) : DEFAULT_TRANSTATOR);
+  handlebars.registerHelper("formatDate", formatDateHelper);
   handlebars.registerHelper("markdownImagesTable", markdownImagesTableHelper);
 };
 

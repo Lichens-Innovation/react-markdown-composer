@@ -175,6 +175,42 @@ Hello {{name}}
     expect(result).toBe("\nHello Ada\n");
   });
 
+  it("should format an ISO date with the default format when no format arg is given", () => {
+    // Arrange
+    const render = createHandlebarsRenderer();
+
+    // Act
+    const result = render({ template: "{{formatDate date}}", data: { date: "2024-01-15T10:30:00" } });
+
+    // Assert
+    expect(result).toBe("2024-01-15 10:30");
+  });
+
+  it("should format an ISO date with a custom date-fns format string", () => {
+    // Arrange
+    const render = createHandlebarsRenderer();
+
+    // Act
+    const result = render({
+      template: '{{formatDate date "dd/MM/yyyy"}}',
+      data: { date: "2024-01-15T10:30:00" },
+    });
+
+    // Assert
+    expect(result).toBe("15/01/2024");
+  });
+
+  it("should return empty string when formatDate is given a blank date", () => {
+    // Arrange
+    const render = createHandlebarsRenderer();
+
+    // Act
+    const result = render({ template: "{{formatDate missingDate}}", data: {} });
+
+    // Assert
+    expect(result).toBe("");
+  });
+
   it("should return empty string when markdownImagesTable has no images", () => {
     // Arrange
     const render = createHandlebarsRenderer();

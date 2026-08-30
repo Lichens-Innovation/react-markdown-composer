@@ -66,8 +66,13 @@ const buildMarkdownImagesTableFromObjects = ({
 
 type PrintableImages = Record<string, PrintableImage>;
 
-// eslint-disable-next-line project/max-params, @typescript-eslint/max-params -- Handlebars helper positional signature
-export const markdownImagesTableHelper = (objects: string[], imgs: PrintableImages, opts: HelperOptions): string => {
+// eslint-disable-next-line project/max-params -- Handlebars helper positional signature
+export const markdownImagesTableHelper = (
+  objects: string[] = [],
+  imgs: PrintableImages = {},
+  opts: HelperOptions
+  // eslint-disable-next-line @typescript-eslint/max-params
+): string => {
   const columns = Number(opts.hash?.columns) || DEFAULT_COLUMNS;
 
   return buildMarkdownImagesTableFromObjects({

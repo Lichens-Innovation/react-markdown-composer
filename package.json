@@ -63,6 +63,7 @@
     "@milkdown/react": "7.22.1",
     "@uiw/react-json-view": "2.0.0-alpha.43",
     "codemirror": "6.0.2",
+    "date-fns": "4.4.0",
     "handlebars": "4.7.9"
   },
   "peerDependencies": {
