@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.1.1...v1.1.2) (2026-08-30)
+
+
+### Bug Fixes
+
+* **deps:** relax wider dependencies versions support on react and antd ([061ddbc](https://github.com/Lichens-Innovation/react-markdown-composer/commit/061ddbc79528532ca64b4897382012d05f23ac3e))
+
 ## [1.1.1](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.1.0...v1.1.1) (2026-08-30)
 
 
