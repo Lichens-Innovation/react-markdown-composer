@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.1.3...v1.2.0) (2026-08-30)
+
+
+### Features
+
+* **helpers:** added helpers for date and translation ([5903a7c](https://github.com/Lichens-Innovation/react-markdown-composer/commit/5903a7c375c26dcdf35817aa9f538059cd7d8fec))
+
 ## [1.1.3](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.1.2...v1.1.3) (2026-08-30)
 
 
