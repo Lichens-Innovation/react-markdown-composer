@@ -15,13 +15,6 @@ import { DEFAULT_PREVIEW_DEBOUNCE_MS, getCollapsedFlags } from "./markdown-compo
 
 const { useToken } = theme;
 
-export type {
-  MarkdownComposerProps,
-  PrintableImage,
-  RenderTemplate,
-  TranslateTemplate,
-} from "./markdown-composer.types";
-
 export const MarkdownComposer: FunctionComponent<MarkdownComposerProps> = ({
   inputData,
   markdown,

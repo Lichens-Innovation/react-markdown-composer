@@ -1,10 +1,10 @@
-export {
-  MarkdownComposer,
-  type MarkdownComposerProps,
-  type PrintableImage,
-  type RenderTemplate,
-  type TranslateTemplate,
-} from "./markdown-composer";
+export { MarkdownComposer } from "./markdown-composer";
+export type {
+  MarkdownComposerProps,
+  PrintableImage,
+  RenderTemplate,
+  TranslateTemplate,
+} from "./markdown-composer.types";
 
 export {
   concatHelper,

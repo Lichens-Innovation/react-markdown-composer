@@ -6,6 +6,7 @@ import { type FunctionComponent, useEffect, useRef } from "react";
 
 import { htmlElementPlugins } from "../crepe-html/html-element.plugin";
 import { useCrepeContentPadding } from "../hooks/use-crepe-content-padding";
+import { useCrepeTableStyle } from "../hooks/use-crepe-table-style";
 
 const { useToken } = theme;
 
@@ -45,6 +46,7 @@ const MarkdownPreviewInner: FunctionComponent<MarkdownPreviewInnerProps> = ({ ma
 
 export const MarkdownPreviewPanel: FunctionComponent<MarkdownPreviewPanelProps> = ({ markdown, errorMessage }) => {
   useCrepeContentPadding();
+  useCrepeTableStyle();
   const styles = useStyles();
 
   return (
