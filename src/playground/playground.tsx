@@ -10,6 +10,7 @@ const Playground: FunctionComponent = () => {
   const [isObjectGraphVisible, setIsObjectGraphVisible] = useState(true);
   const [isPreviewVisible, setIsPreviewVisible] = useState(true);
   const { markdown, setMarkdown, inputData, isReady, loadErrorMessage } = usePlaygroundFixtures();
+  const styles = useStyles({ isDark });
 
   return (
     <ConfigProvider
@@ -17,8 +18,8 @@ const Playground: FunctionComponent = () => {
         algorithm: isDark ? theme.darkAlgorithm : theme.defaultAlgorithm,
       }}
     >
-      <Flex vertical style={{ height: "100%", background: isDark ? "#141414" : "#ffffff" }}>
-        <Flex align="center" gap={16} style={{ padding: "8px 12px", borderBottom: "1px solid #d9d9d9" }}>
+      <Flex vertical style={styles.root}>
+        <Flex align="center" gap={16} style={styles.header}>
           <Typography.Text strong>MarkdownComposer</Typography.Text>
           <Flex align="center" gap={8}>
             <Typography.Text>Dark</Typography.Text>
@@ -26,7 +27,7 @@ const Playground: FunctionComponent = () => {
           </Flex>
         </Flex>
 
-        <Flex flex={1} style={{ minHeight: 0 }}>
+        <Flex flex={1} style={styles.body}>
           <PlaygroundBody
             markdown={markdown}
             inputData={inputData}
@@ -55,3 +56,27 @@ document.body.style.margin = "0";
 root.style.height = "100%";
 
 createRoot(root).render(<Playground />);
+
+interface UseStylesArgs {
+  isDark: boolean;
+}
+
+const { useToken } = theme;
+
+const useStyles = ({ isDark }: UseStylesArgs) => {
+  const { token } = useToken();
+
+  return {
+    root: {
+      height: "100%",
+      background: isDark ? "#141414" : "#ffffff",
+    },
+    header: {
+      padding: `${token.paddingXS}px ${token.paddingSM}px`,
+      borderBottom: "1px solid #d9d9d9",
+    },
+    body: {
+      minHeight: 0,
+    },
+  };
+};

@@ -43,13 +43,15 @@ export const PlaygroundBody: FunctionComponent<PlaygroundBodyProps> = ({
   onObjectGraphVisibleChange,
   onPreviewVisibleChange,
 }) => {
+  const styles = getStyles();
+
   if (loadErrorMessage) {
     return <Alert type="error" title="Failed to load playground fixtures" description={loadErrorMessage} />;
   }
 
   if (!isReady) {
     return (
-      <Flex align="center" justify="center" vertical gap={8} style={{ height: "100%" }}>
+      <Flex align="center" justify="center" vertical gap={8} style={styles.loading}>
         <Spin />
         <Typography.Text>Loading playground fixtures…</Typography.Text>
       </Flex>
@@ -73,4 +75,12 @@ export const PlaygroundBody: FunctionComponent<PlaygroundBodyProps> = ({
       onPreviewVisibleChange={onPreviewVisibleChange}
     />
   );
+};
+
+const getStyles = () => {
+  return {
+    loading: {
+      height: "100%",
+    },
+  };
 };

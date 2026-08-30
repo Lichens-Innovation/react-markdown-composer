@@ -2,10 +2,13 @@ import JsonView from "@uiw/react-json-view";
 import { darkTheme } from "@uiw/react-json-view/dark";
 import { lightTheme } from "@uiw/react-json-view/light";
 import { TriangleSolidArrow } from "@uiw/react-json-view/triangle-solid-arrow";
-import type { CSSProperties, FunctionComponent, KeyboardEvent, MouseEvent } from "react";
+import { theme } from "antd";
+import type { FunctionComponent, KeyboardEvent, MouseEvent } from "react";
 
 import { useIsAntdDark } from "../hooks/use-is-antd-dark";
 import { buildObjectPath, toJsonViewValue } from "../markdown-composer.utils";
+
+const { useToken } = theme;
 
 interface ObjectGraphPanelProps {
   inputData: unknown;
@@ -22,15 +25,10 @@ interface HandleKeyNameKeyDownArgs {
   keys: Array<string | number>;
 }
 
-const OBJECT_GRAPH_STYLE = {
-  height: "100%",
-  overflow: "auto",
-  padding: 8,
-} as const satisfies CSSProperties;
-
 export const ObjectGraphPanel: FunctionComponent<ObjectGraphPanelProps> = ({ inputData, onKeyNameClick }) => {
   const isDark = useIsAntdDark();
   const themeStyle = isDark ? darkTheme : lightTheme;
+  const styles = useStyles();
 
   const handleKeyNameClick = ({ event, keys }: HandleKeyNameClickArgs) => {
     event.stopPropagation();
@@ -48,7 +46,7 @@ export const ObjectGraphPanel: FunctionComponent<ObjectGraphPanelProps> = ({ inp
   };
 
   return (
-    <div style={OBJECT_GRAPH_STYLE} role="region" aria-label="Object graph">
+    <div style={styles.root} role="region" aria-label="Object graph">
       <JsonView value={toJsonViewValue(inputData)} style={themeStyle} enableClipboard collapsed={1}>
         <JsonView.Arrow>
           <TriangleSolidArrow />
@@ -60,7 +58,7 @@ export const ObjectGraphPanel: FunctionComponent<ObjectGraphPanelProps> = ({ inp
               {...props}
               role="button"
               tabIndex={0}
-              style={{ ...props.style, cursor: "pointer" }}
+              style={{ ...props.style, ...styles.keyName }}
               onClick={(event) => handleKeyNameClick({ event, keys })}
               onKeyDown={(event) => handleKeyNameKeyDown({ event, keys })}
             />
@@ -69,4 +67,19 @@ export const ObjectGraphPanel: FunctionComponent<ObjectGraphPanelProps> = ({ inp
       </JsonView>
     </div>
   );
+};
+
+const useStyles = () => {
+  const { token } = useToken();
+
+  return {
+    root: {
+      height: "100%",
+      overflow: "auto",
+      padding: token.paddingXS,
+    },
+    keyName: {
+      cursor: "pointer",
+    },
+  };
 };

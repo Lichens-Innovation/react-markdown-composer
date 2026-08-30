@@ -1,6 +1,6 @@
 import "@milkdown/crepe/theme/common/style.css";
 
-import { Splitter } from "antd";
+import { Splitter, theme } from "antd";
 import { useRef, type FunctionComponent } from "react";
 
 import { MarkdownEditorPanel, type MarkdownEditorHandle } from "./components/markdown-editor-panel";
@@ -12,6 +12,8 @@ import { useDebouncedTemplatePreview } from "./hooks/use-debounced-template-prev
 import { useIsAntdDark } from "./hooks/use-is-antd-dark";
 import type { MarkdownComposerProps } from "./markdown-composer.types";
 import { DEFAULT_PREVIEW_DEBOUNCE_MS, getCollapsedFlags } from "./markdown-composer.utils";
+
+const { useToken } = theme;
 
 export type {
   MarkdownComposerProps,
@@ -34,6 +36,7 @@ export const MarkdownComposer: FunctionComponent<MarkdownComposerProps> = ({
   className,
   style,
 }) => {
+  const styles = useStyles();
   const isDark = useIsAntdDark();
   useCrepeThemeStylesheet(isDark);
 
@@ -59,7 +62,12 @@ export const MarkdownComposer: FunctionComponent<MarkdownComposerProps> = ({
   };
 
   return (
-    <Splitter className={className} style={{ height: "100%", ...style }} onCollapse={handleCollapse}>
+    <Splitter
+      className={className}
+      style={{ ...styles.root, ...style }}
+      styles={styles.panel}
+      onCollapse={handleCollapse}
+    >
       <Splitter.Panel defaultSize={isObjectGraphVisible ? "25%" : 0} min="15%" collapsible>
         <ObjectGraphPanel inputData={inputData} onKeyNameClick={(path) => editorHandleRef.current?.insertPath(path)} />
       </Splitter.Panel>
@@ -73,4 +81,21 @@ export const MarkdownComposer: FunctionComponent<MarkdownComposerProps> = ({
       </Splitter.Panel>
     </Splitter>
   );
+};
+
+const useStyles = () => {
+  const { token } = useToken();
+
+  return {
+    root: {
+      height: "100%",
+    },
+    panel: {
+      panel: {
+        border: `1px solid ${token.colorBorder}`,
+        borderRadius: token.borderRadiusLG,
+        overflow: "hidden",
+      },
+    },
+  };
 };

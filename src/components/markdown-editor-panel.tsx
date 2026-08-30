@@ -27,7 +27,16 @@ export const MarkdownEditorPanel: FunctionComponent<MarkdownEditorPanelProps> = 
 
   useImperativeHandle(editorRef, () => ({ insertPath }), [insertPath]);
 
-  return (
-    <div ref={containerRef} style={{ height: "100%", overflow: "hidden" }} role="region" aria-label="Markdown editor" />
-  );
+  const styles = getStyles();
+
+  return <div ref={containerRef} style={styles.root} role="region" aria-label="Markdown editor" />;
+};
+
+const getStyles = () => {
+  return {
+    root: {
+      height: "100%",
+      overflow: "hidden",
+    },
+  };
 };
