@@ -100,21 +100,21 @@ describe("createHandlebarsRenderer", () => {
     expect(missed).toBe("none");
   });
 
-  it("should resolve statusColor from the map argument", () => {
+  it("should resolve simpleMapper from the map argument", () => {
     // Arrange
     const render = createHandlebarsRenderer();
     const statusColors = { compliant: "#43A047", other: "#000" };
 
     // Act
     const known = render({
-      template: "{{statusColor rawStatus statusColors}}",
+      template: "{{simpleMapper rawStatus statusColors}}",
       data: {
         rawStatus: "compliant",
         statusColors,
       },
     });
     const unknown = render({
-      template: "{{statusColor rawStatus statusColors}}",
+      template: "{{simpleMapper rawStatus statusColors}}",
       data: {
         rawStatus: "missing",
         statusColors,
@@ -159,20 +159,6 @@ describe("createHandlebarsRenderer", () => {
     expect(result).toContain("![b\\|pipe.jpg](data:b)");
     expect(result).toContain("![a.jpg](data:a)");
     expect(result).not.toContain("missing");
-  });
-
-  it("should render after stripping HTML comments from the template", () => {
-    // Arrange
-    const render = createHandlebarsRenderer();
-    const template = `<!-- template principal : en-tête -->
-Hello {{name}}
-<!--keep-->`;
-
-    // Act
-    const result = render({ template, data: { name: "Ada" } });
-
-    // Assert
-    expect(result).toBe("\nHello Ada\n");
   });
 
   it("should format an ISO date with the default format when no format arg is given", () => {
@@ -234,7 +220,7 @@ describe("registerHandlebarsHelpers", () => {
     handlebars.registerHelper("shout", (value: string) => String(value).toUpperCase());
 
     // Act
-    const result = handlebars.compile('{{statusColor "ok" statusColors}}-{{shout name}}-{{eq a b}}', {
+    const result = handlebars.compile('{{simpleMapper "ok" statusColors}}-{{shout name}}-{{eq a b}}', {
       noEscape: true,
     })({
       name: "ada",
@@ -261,10 +247,10 @@ describe("exported helpers", () => {
     // Arrange
     const handlebars = Handlebars.create();
     handlebars.registerHelper("eq", eqHelper);
-    handlebars.registerHelper("statusColor", simpleMapper);
+    handlebars.registerHelper("simpleMapper", simpleMapper);
 
     // Act
-    const result = handlebars.compile('{{#if (eq status "ok")}}{{statusColor status statusColors}}{{/if}}', {
+    const result = handlebars.compile('{{#if (eq status "ok")}}{{simpleMapper status statusColors}}{{/if}}', {
       noEscape: true,
     })({ status: "ok", statusColors: { ok: "#0f0" } });
 

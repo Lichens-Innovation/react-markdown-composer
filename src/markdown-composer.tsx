@@ -6,7 +6,7 @@ import { useRef, type FunctionComponent } from "react";
 import { MarkdownEditorPanel, type MarkdownEditorHandle } from "./components/markdown-editor-panel";
 import { MarkdownPreviewPanel } from "./components/markdown-preview-panel";
 import { ObjectGraphPanel } from "./components/object-graph-panel";
-import { createHandlebarsRenderer } from "./handlebar-helpers/handlebars.helpers";
+import { cleanTemplate, createHandlebarsRenderer } from "./handlebar-helpers/handlebars.helpers";
 import { useCrepeThemeStylesheet } from "./hooks/use-crepe-theme-stylesheet";
 import { useDebouncedTemplatePreview } from "./hooks/use-debounced-template-preview";
 import { useIsAntdDark } from "./hooks/use-is-antd-dark";
@@ -70,7 +70,7 @@ export const MarkdownComposer: FunctionComponent<MarkdownComposerProps> = ({
       </Splitter.Panel>
 
       <Splitter.Panel defaultSize={isPreviewVisible ? "25%" : 0} min="15%" collapsible>
-        <MarkdownPreviewPanel markdown={previewMarkdown} errorMessage={previewErrorMessage} />
+        <MarkdownPreviewPanel markdown={cleanTemplate(previewMarkdown)} errorMessage={previewErrorMessage} />
       </Splitter.Panel>
     </Splitter>
   );

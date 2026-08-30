@@ -82,7 +82,6 @@ export interface RegisterHandlebarsHelpersArgs {
 }
 
 export const registerHandlebarsHelpers = ({ handlebars, translate }: RegisterHandlebarsHelpersArgs): void => {
-  handlebars.registerHelper("statusColor", simpleMapper);
   handlebars.registerHelper("simpleMapper", simpleMapper);
   handlebars.registerHelper("concat", concatHelper);
   handlebars.registerHelper("eq", eqHelper);
@@ -105,8 +104,7 @@ export const createHandlebarsRenderer = ({ translate }: CreateHandlebarsRenderer
   registerHandlebarsHelpers({ handlebars, translate });
 
   return ({ template, data }) => {
-    const cleanedTemplate: string = cleanTemplate(template);
-    const compiled = handlebars.compile(cleanedTemplate, { noEscape: true });
-    return compiled(data);
+    const compiledTemplate = handlebars.compile(template, { noEscape: true });
+    return compiledTemplate(data);
   };
 };

@@ -15,7 +15,7 @@
 {{#each fields~}}
 {{#if (eq type "STATUS")}}
 | {{title}} | <span style="color:{{
-  statusColor
+  simpleMapper
   rawStatus
   @root.statusColors
 }}">**{{
