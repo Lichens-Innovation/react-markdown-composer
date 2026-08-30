@@ -12,39 +12,7 @@ import testingLibrary from "eslint-plugin-testing-library";
 import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
 import { globalIgnores } from "eslint/config";
-import todoTicketRef from "./eslint-rules/todo-ticket-ref.js";
-import maxParamsProject from "./eslint-rules/max-params-project.js";
-import noExplicitUndefinedOptional from "./eslint-rules/no-explicit-undefined-optional.js";
-import requireNumericEnumInitializer from "./eslint-rules/require-numeric-enum-initializer.js";
-import noUnguardedJsonParse from "./eslint-rules/no-unguarded-json-parse.js";
-import preferSomeOverFindCheck from "./eslint-rules/prefer-some-over-find-check.js";
-import preferPositiveCondition from "./eslint-rules/prefer-positive-condition.js";
-import preferIncludesOverOrChain from "./eslint-rules/prefer-includes-over-or-chain.js";
-import preferJsxShortCircuit from "./eslint-rules/prefer-jsx-short-circuit.js";
-import noNestedTry from "./eslint-rules/no-nested-try.js";
-import noExportedMutableState from "./eslint-rules/no-exported-mutable-state.js";
-import noInlineObjectParamType from "./eslint-rules/no-inline-object-param-type.js";
-import preferNullishHelpers from "./eslint-rules/prefer-nullish-helpers.js";
-import requireFallbackOnDeepChain from "./eslint-rules/require-fallback-on-deep-chain.js";
-import noInlineRenderFunction from "./eslint-rules/no-inline-render-function.js";
-import noJsxInVariable from "./eslint-rules/no-jsx-in-variable.js";
-import noInlineArrayChainInJsx from "./eslint-rules/no-inline-array-chain-in-jsx.js";
-import noHookReturningJsx from "./eslint-rules/no-hook-returning-jsx.js";
-import noRenderFnInUsecallback from "./eslint-rules/no-render-fn-in-usecallback.js";
-import noTrivialUsememo from "./eslint-rules/no-trivial-usememo.js";
-import noNonHookUsePrefix from "./eslint-rules/no-non-hook-use-prefix.js";
-import noInlineCurriedHandler from "./eslint-rules/no-inline-curried-handler.js";
-import noInlineGuardChainHandler from "./eslint-rules/no-inline-guard-chain-handler.js";
-import preferReactnodeOverJsxelementUnion from "./eslint-rules/prefer-reactnode-over-jsxelement-union.js";
-import preferPropsWithChildren from "./eslint-rules/prefer-props-with-children.js";
-import hoistStaticComponentConstants from "./eslint-rules/hoist-static-component-constants.js";
-import requireEffectCleanup from "./eslint-rules/require-effect-cleanup.js";
-import preferStateUpdaterForm from "./eslint-rules/prefer-state-updater-form.js";
-import requireUsestateUserefGeneric from "./eslint-rules/require-usestate-useref-generic.js";
-import preferElementRefType from "./eslint-rules/prefer-element-ref-type.js";
-import preferRoleQueryOverTestid from "./eslint-rules/prefer-role-query-over-testid.js";
-import noTestsInDunderFolder from "./eslint-rules/no-tests-in-dunder-folder.js";
-import filenameConventionByExportShape from "./eslint-rules/filename-convention-by-export-shape.js";
+import codingGuide from "@lichens-innovation/eslint-plugin-coding-guide";
 
 const testFiles = ["**/__tests__/**", "**/*.test.{ts,tsx}", "**/*.spec.{ts,tsx}"];
 
@@ -86,38 +54,8 @@ export default tseslint.config(
       unicorn,
       project: {
         rules: {
-          ...maxParamsProject.rules,
-          ...noExplicitUndefinedOptional.rules,
-          ...requireNumericEnumInitializer.rules,
-          ...noUnguardedJsonParse.rules,
-          ...preferSomeOverFindCheck.rules,
-          ...preferPositiveCondition.rules,
-          ...preferIncludesOverOrChain.rules,
-          ...preferJsxShortCircuit.rules,
-          ...noNestedTry.rules,
-          ...noExportedMutableState.rules,
-          ...noInlineObjectParamType.rules,
-          ...preferNullishHelpers.rules,
-          ...requireFallbackOnDeepChain.rules,
-          ...noInlineRenderFunction.rules,
-          ...noJsxInVariable.rules,
-          ...noInlineArrayChainInJsx.rules,
-          ...noHookReturningJsx.rules,
-          ...noRenderFnInUsecallback.rules,
-          ...noTrivialUsememo.rules,
-          ...noNonHookUsePrefix.rules,
-          ...noInlineCurriedHandler.rules,
-          ...noInlineGuardChainHandler.rules,
-          ...preferReactnodeOverJsxelementUnion.rules,
-          ...preferPropsWithChildren.rules,
-          ...hoistStaticComponentConstants.rules,
-          ...requireEffectCleanup.rules,
-          ...preferStateUpdaterForm.rules,
-          ...requireUsestateUserefGeneric.rules,
-          ...preferElementRefType.rules,
-          ...preferRoleQueryOverTestid.rules,
-          ...noTestsInDunderFolder.rules,
-          ...filenameConventionByExportShape.rules,
+          ...codingGuide.rules,
+          "max-params": codingGuide.rules["max-params-project"],
         },
       },
     },
@@ -251,7 +189,7 @@ export default tseslint.config(
   },
   {
     files: ["**/*.{ts,tsx,js,jsx,cjs}"],
-    plugins: { "todo-plz": todoTicketRef },
+    plugins: { "todo-plz": { rules: { "ticket-ref": codingGuide.rules["todo-ticket-ref"] } } },
     rules: {
       "todo-plz/ticket-ref": [
         "warn",
@@ -270,7 +208,7 @@ export default tseslint.config(
       "max-lines-per-function": ["error", { max: 90, skipBlankLines: true, skipComments: true }],
     },
   },
-  { files: ["eslint-rules/**", ".claude/hooks/**"], rules: { "todo-plz/ticket-ref": "off" } },
+  { files: [".claude/hooks/**"], rules: { "todo-plz/ticket-ref": "off" } },
   {
     files: ["**/*.{mts,cjs,js,mjs}"],
     rules: { "no-console": "error" },

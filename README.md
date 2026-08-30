@@ -88,7 +88,6 @@ Starts the Vite playground on http://localhost:3000 and opens `MarkdownComposer`
 | `bun habit:snoozed`     | Lists the currently snoozed habit-hooks findings (`.habit-hooks/snooze.json`)                       |
 | `bun build`             | Cleans `dist`, then Vite library build (`src/index.ts` → `dist/`)                                   |
 | `bun test`              | Runs tests using Vitest                                                                             |
-| `bun test:eslint-rules` | Runs unit tests for custom ESLint rules (`eslint-rules/`)                                           |
 | `bun test:coverage`     | Runs tests with a Vitest coverage report                                                            |
 | `bun test:crap`         | Runs tests with coverage, then generates a CRAP score report (`crap-report/`)                       |
 

@@ -20,6 +20,7 @@
       "devDependencies": {
         "@commitlint/config-conventional": "21.2.2",
         "@eslint/js": "10.0.1",
+        "@lichens-innovation/eslint-plugin-coding-guide": "1.0.1",
         "@semantic-release/changelog": "6.0.3",
         "@semantic-release/exec": "6.0.3",
         "@semantic-release/git": "10.0.1",
@@ -380,6 +381,8 @@
     "@lezer/xml": ["@lezer/xml@1.0.6", "", { "dependencies": { "@lezer/common": "^1.2.0", "@lezer/highlight": "^1.0.0", "@lezer/lr": "^1.0.0" } }, "sha512-CdDwirL0OEaStFue/66ZmFSeppuL6Dwjlk8qk153mSQwiSH/Dlri4GNymrNWnUmPl2Um7QfV1FO9KFUyX3Twww=="],
 
     "@lezer/yaml": ["@lezer/yaml@1.0.4", "", { "dependencies": { "@lezer/common": "^1.2.0", "@lezer/highlight": "^1.0.0", "@lezer/lr": "^1.4.0" } }, "sha512-2lrrHqxalACEbxIbsjhqGpSW8kWpUKuY6RHgnSAFZa6qK62wvnPxA8hGOwOoDbwHcOFs5M4o27mjGu+P7TvBmw=="],
+
+    "@lichens-innovation/eslint-plugin-coding-guide": ["@lichens-innovation/eslint-plugin-coding-guide@1.0.1", "", { "dependencies": { "@typescript-eslint/utils": "8.68.0" }, "peerDependencies": { "eslint": ">=9.0.0" } }, "sha512-HTijd2On3tIGNwuUMXqJVLHO6qfA5lBXP5U2+0nKr/B1wFk9uMRagdkC+AoBf+lMJo/0ZyGlRPEUSI99eayHIw=="],
 
     "@lichens-innovation/ts-common": ["@lichens-innovation/ts-common@1.25.0", "", { "dependencies": { "date-fns": "4.1.0" }, "peerDependencies": { "@rjsf/utils": "*", "@rjsf/validator-ajv8": "*", "ajv-i18n": "*", "exceljs": "4.4.0", "i18next": "*", "jspdf": "4.1.0", "jspdf-autotable": "5.0.7", "mime": "4.1.0", "papaparse": "5.4.1", "pino": "10.3.1", "pino-pretty": "13.0.0", "react-i18next": "*" }, "optionalPeers": ["@rjsf/utils", "@rjsf/validator-ajv8", "ajv-i18n", "exceljs", "i18next", "jspdf", "jspdf-autotable", "mime", "papaparse", "pino", "pino-pretty", "react-i18next"] }, "sha512-ZGcXQ2jRue367s6PsxxkoYmpCTVJjIaxPA6GKkI1o7C8ydVCKNC36igiXOzuNdOvMy/KOy8KV54oxl9pC3p9uA=="],
 
