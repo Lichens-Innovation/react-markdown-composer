@@ -10,8 +10,9 @@ Reusable React component for composing markdown.
 
 - [react-markdown-composer](#react-markdown-composer)
   - [Installation](#installation)
+  - [Usage](#usage)
   - [Development](#development)
-    - [All Scripts](#all-scripts)
+  - [All Scripts](#all-scripts)
   - [Project coding guidelines](#project-coding-guidelines)
   - [Contributions](#contributions)
   - [Library semantic versioning](#library-semantic-versioning)
@@ -26,9 +27,26 @@ bun add @lichens-innovation/react-markdown-composer
 
 Peer dependencies (install in the host app): `antd`, `react`, `react-dom`.
 
+## Usage
+
 ```tsx
+import { useState } from "react";
 import { MarkdownComposer } from "@lichens-innovation/react-markdown-composer";
+
+const MyComposerDialogBody = ({ inputData }) => {
+  const [markdown, setMarkdown] = useState("markdown template with {{some expressions}} ");
+
+  return (
+    <MarkdownComposer
+      inputData={inputData}
+      markdown={markdown}
+      onMarkdownChange={setMarkdown}
+    />
+  );
+};
 ```
+
+![MarkdownComposer demo](docs/images/demo-01.png)
 
 ## Development
 
@@ -38,7 +56,7 @@ Install [Bun](https://bun.sh/docs/installation) 1.4+ (see `packageManager` in `p
 bun install
 ```
 
-Install [habit-hooks](https://github.com/habit-hooks/habit-hooks) (Python 3.11+) to run the `bun run habit:hooks` / `bun run habit:snoozed` scripts below:
+Install [habit-hooks](https://github.com/habit-hooks/habit-hooks) (Python 3.11+) to run the `bun run lint` / `bun run habit:hooks` / `bun run habit:snoozed` scripts below:
 
 ```bash
 uv tool install "habit-hooks[typescript]"  # pip, pipx or brew also work
@@ -52,25 +70,27 @@ Starts the Vite playground on http://localhost:3000 and opens `MarkdownComposer`
 
 ## All Scripts
 
-| Command                 | Description                                                                                    |
-| ----------------------- | ---------------------------------------------------------------------------------------------- |
-| `bun clean:node`        | Removes node_modules directories and bun.lock file                                             |
-| `bun start`             | Starts the Vite playground (MarkdownComposer)                                                  |
-| `bun generate:version`  | Writes version constants from package.json (optional local helper)                             |
-| `bun typecheck`         | Checks TypeScript types without emitting files                                                 |
-| `bun lint`              | Runs ESLint to check code quality                                                              |
-| `bun lint:fix`          | Runs ESLint with `--fix`                                                                       |
-| `bun lint:package`      | Lints `package.json` via npm-package-json-lint                                                 |
-| `bun lint:unused`       | Finds unused files, exports, and dependencies (via knip)                                       |
-| `bun habit:hooks`       | Runs [habit-hooks](https://github.com/habit-hooks/habit-hooks) — linter findings as coaching guides |
-| `bun habit:snoozed`     | Lists the currently snoozed habit-hooks findings (`.habit-hooks/snooze.json`)                  |
-| `bun format`            | Formats all files using Prettier according to .prettierrc rules                                |
-| `bun format:check`      | Checks if files are formatted according to Prettier rules                                      |
-| `bun build`             | Cleans `dist`, then Vite library build (`src/index.ts` → `dist/`)                            |
-| `bun test`              | Runs tests using Vitest                                                                        |
-| `bun test:eslint-rules` | Runs unit tests for custom ESLint rules (`eslint-rules/`)                                      |
-| `bun test:coverage`     | Runs tests with a Vitest coverage report                                                       |
-| `bun test:crap`         | Runs tests with coverage, then generates a CRAP score report (`crap-report/`)                  |
+| Command                 | Description                                                                                         |
+| ----------------------- | --------------------------------------------------------------------------------------------------- |
+| `bun prepare`           | Installs husky git hooks and applies patch-package patches (runs on `bun install`)                  |
+| `bun clean:node`        | Removes node_modules directories and bun.lock file                                                  |
+| `bun start`             | Starts the Vite playground (MarkdownComposer)                                                       |
+| `bun generate:version`  | Writes version constants from package.json (optional local helper)                                  |
+| `bun typecheck`         | Checks TypeScript types without emitting files                                                      |
+| `bun lint`              | Runs [habit-hooks](https://github.com/habit-hooks/habit-hooks) — linter findings as coaching guides |
+| `bun lint:ci`           | Runs ESLint to check code quality                                                                   |
+| `bun lint:fix`          | Runs ESLint with `--fix`                                                                            |
+| `bun lint:package`      | Lints `package.json` via npm-package-json-lint                                                      |
+| `bun lint:unused`       | Finds unused files, exports, and dependencies (via knip)                                            |
+| `bun format`            | Formats all files using Prettier according to .prettierrc rules                                     |
+| `bun format:check`      | Checks if files are formatted according to Prettier rules                                           |
+| `bun habit:hooks`       | Runs habit-hooks against the `main` branch (`habit-hooks --branch main`)                            |
+| `bun habit:snoozed`     | Lists the currently snoozed habit-hooks findings (`.habit-hooks/snooze.json`)                       |
+| `bun build`             | Cleans `dist`, then Vite library build (`src/index.ts` → `dist/`)                                   |
+| `bun test`              | Runs tests using Vitest                                                                             |
+| `bun test:eslint-rules` | Runs unit tests for custom ESLint rules (`eslint-rules/`)                                           |
+| `bun test:coverage`     | Runs tests with a Vitest coverage report                                                            |
+| `bun test:crap`         | Runs tests with coverage, then generates a CRAP score report (`crap-report/`)                       |
 
 ## Project coding guidelines
 
