@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.3.0...v1.4.0) (2026-08-30)
+
+
+### Features
+
+* **font:** usage of antd token for font size ([8686aa6](https://github.com/Lichens-Innovation/react-markdown-composer/commit/8686aa60585b7297793f091f1c29c7c3fe9299fd))
+
 # [1.3.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.2.0...v1.3.0) (2026-08-30)
 
 
