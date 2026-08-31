@@ -66,7 +66,7 @@ const buildMarkdownImagesTableFromObjects = ({
 
 type PrintableImages = Record<string, PrintableImage>;
 
-// eslint-disable-next-line project/max-params -- Handlebars helper positional signature
+// eslint-disable-next-line coding-guide/max-params-project -- Handlebars helper positional signature
 export const markdownImagesTableHelper = (
   objects: string[] = [],
   imgs: PrintableImages = {},

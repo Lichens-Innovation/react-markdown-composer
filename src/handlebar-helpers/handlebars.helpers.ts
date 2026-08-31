@@ -55,7 +55,7 @@ export const simpleMapper = (key: string, mapper: Record<string, string> = {}): 
 
 const translationHelperBuilder =
   (translate: TranslateTemplate) =>
-  // eslint-disable-next-line project/max-params
+  // eslint-disable-next-line coding-guide/max-params-project
   (
     key: string,
     optionsOrArgs?: Record<string, unknown> | Handlebars.HelperOptions,

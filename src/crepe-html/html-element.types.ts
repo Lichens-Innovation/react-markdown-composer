@@ -1,7 +1,7 @@
 export interface HtmlMdastNode {
   type: string;
   value?: string;
-  // eslint-disable-next-line project/prefer-props-with-children -- mdast field, not React children
+  // eslint-disable-next-line coding-guide/prefer-props-with-children -- mdast field, not React children
   children?: HtmlMdastNode[];
   tagName?: string;
   htmlAttrs?: Record<string, string>;

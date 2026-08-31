@@ -14,7 +14,7 @@ const HTML_ATTRIBUTE_RE = /([^\s"'=<>]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'
 interface CreateHtmlElementNodeArgs {
   tagName: string;
   htmlAttrs: Record<string, string>;
-  // eslint-disable-next-line project/prefer-props-with-children -- mdast field, not React children
+  // eslint-disable-next-line coding-guide/prefer-props-with-children -- mdast field, not React children
   children: HtmlMdastNode[];
 }
 
