@@ -1,0 +1,5 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the no-non-hook-use-prefix rule.
+ */
+
+export const useCalculateDiscount = (price: number): number => price * 0.9;

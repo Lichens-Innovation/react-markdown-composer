@@ -1,0 +1,11 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the prefer-reactnode-over-jsxelement-union rule.
+ */
+
+interface BannerProps {
+  content?: JSX.Element | null;
+}
+
+export const Banner = ({ content }: BannerProps): JSX.Element => {
+  return <div>{content}</div>;
+};

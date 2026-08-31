@@ -1,0 +1,9 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the no-render-fn-in-usecallback rule.
+ */
+import { useCallback } from "react";
+
+export const StatusIcon = (): JSX.Element => {
+  const icon = useCallback(() => <span>Status</span>, []);
+  return icon();
+};

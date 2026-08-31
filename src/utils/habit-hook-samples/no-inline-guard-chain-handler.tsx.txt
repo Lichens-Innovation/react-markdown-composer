@@ -1,0 +1,13 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the no-inline-guard-chain-handler rule.
+ */
+
+interface ActionButtonProps {
+  disabled: boolean;
+  readOnly: boolean;
+  onSubmit: () => void;
+}
+
+export const ActionButton = ({ disabled, readOnly, onSubmit }: ActionButtonProps): JSX.Element => (
+  <button onClick={() => !disabled && !readOnly && onSubmit()}>Submit</button>
+);

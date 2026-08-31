@@ -1,0 +1,7 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the no-unguarded-json-parse rule.
+ */
+
+export const parseConfig = (raw: string): unknown => {
+  return JSON.parse(raw);
+};

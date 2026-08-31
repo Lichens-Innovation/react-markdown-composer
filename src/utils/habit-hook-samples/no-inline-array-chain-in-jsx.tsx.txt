@@ -1,0 +1,20 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the no-inline-array-chain-in-jsx rule.
+ */
+
+interface ItemListProps {
+  items: string[];
+}
+
+export const ItemList = ({ items }: ItemListProps): JSX.Element => {
+  return (
+    <ul>
+      {items
+        .filter((item) => item.length > 0)
+        .sort()
+        .map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+    </ul>
+  );
+};

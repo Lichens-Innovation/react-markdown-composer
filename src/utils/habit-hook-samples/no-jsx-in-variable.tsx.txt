@@ -1,0 +1,12 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the no-jsx-in-variable rule.
+ */
+
+interface NoticeBannerProps {
+  label: string;
+}
+
+export const NoticeBanner = ({ label }: NoticeBannerProps): JSX.Element => {
+  const labelNode = <span>{label}</span>;
+  return <div>{labelNode}</div>;
+};

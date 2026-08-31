@@ -1,0 +1,8 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the no-inline-render-function rule.
+ */
+
+export const InfoPanel = (): JSX.Element => {
+  const renderIcon = (): JSX.Element => <span>i</span>;
+  return <div>{renderIcon()}</div>;
+};

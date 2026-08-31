@@ -1,0 +1,7 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the prefer-some-over-find-check rule.
+ */
+
+export const hasNegative = (values: number[]): boolean => {
+  return values.find((value) => value < 0) !== undefined;
+};

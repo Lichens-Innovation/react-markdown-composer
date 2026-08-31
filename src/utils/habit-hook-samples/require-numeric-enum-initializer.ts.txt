@@ -1,0 +1,8 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the require-numeric-enum-initializer rule.
+ */
+
+export enum SampleStatus {
+  Pending,
+  Active,
+}

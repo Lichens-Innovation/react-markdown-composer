@@ -1,0 +1,14 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the hoist-static-component-constants rule.
+ */
+
+export const ColorSwatches = (): JSX.Element => {
+  const COLORS = ["red", "green", "blue"];
+  return (
+    <ul>
+      {COLORS.map((color) => (
+        <li key={color}>{color}</li>
+      ))}
+    </ul>
+  );
+};

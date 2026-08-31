@@ -1,0 +1,15 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the no-nested-try rule.
+ */
+
+export const readConfig = (raw: string): unknown => {
+  try {
+    return JSON.parse(raw);
+  } catch {
+    try {
+      return JSON.parse("{}");
+    } catch {
+      return null;
+    }
+  }
+};

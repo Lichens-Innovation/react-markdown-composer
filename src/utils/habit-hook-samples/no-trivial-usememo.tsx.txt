@@ -1,0 +1,13 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the no-trivial-usememo rule.
+ */
+import { useMemo } from "react";
+
+interface UseFullNameArgs {
+  first: string;
+  last: string;
+}
+
+export const useFullName = ({ first, last }: UseFullNameArgs): string => {
+  return useMemo(() => `${first} ${last}`, [first, last]);
+};

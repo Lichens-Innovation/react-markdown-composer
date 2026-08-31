@@ -1,0 +1,9 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the filename-convention-by-export-shape rule.
+ */
+import { useState } from "react";
+
+export const useCounter = () => {
+  const [count, setCount] = useState(0);
+  return { count, setCount };
+};

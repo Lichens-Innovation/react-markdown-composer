@@ -1,0 +1,7 @@
+/** habit-hooks-disable non-essential-comment
+ * This is a "Demo" example that should trigger the prefer-nullish-helpers rule.
+ */
+
+export const hasValue = (value: unknown): boolean => {
+  return value !== null && value !== undefined;
+};
