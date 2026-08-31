@@ -19,7 +19,7 @@ severity = "enforced"
 
 [smells."coding-guide/max-params-project"]
 severity = "enforced"
-guide = "too-many-parameters.md"
+guide = "max-params-project.md"
 
 [smells."coding-guide/no-explicit-undefined-optional"]
 severity = "enforced"
