@@ -1,5 +1,0 @@
-/** habit-hooks-disable non-essential-comment
- * This is a "Demo" example that should trigger the no-explicit-undefined-optional rule.
- */
-
-export const formatName = (name: string | undefined): string => name ?? "Unknown";

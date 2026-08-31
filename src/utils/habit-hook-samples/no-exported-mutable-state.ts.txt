@@ -1,6 +1,0 @@
-/** habit-hooks-disable non-essential-comment
- * This is a "Demo" example that should trigger the no-exported-mutable-state rule.
- */
-
-export let currentUser: string | null = null;
-currentUser = "guest";

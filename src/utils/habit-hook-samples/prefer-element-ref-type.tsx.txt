@@ -1,9 +1,0 @@
-/** habit-hooks-disable non-essential-comment
- * This is a "Demo" example that should trigger the prefer-element-ref-type rule.
- */
-import { useRef } from "react";
-
-export const DemoBox = (): JSX.Element => {
-  const boxRef = useRef<HTMLDivElement>(null);
-  return <div ref={boxRef}>box</div>;
-};

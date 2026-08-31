@@ -1,6 +1,0 @@
-/** habit-hooks-disable non-essential-comment
- * This is a "Demo" example that should trigger the no-inline-object-param-type rule.
- */
-
-export const buildFooKey = ({ siteSlug, equipmentSlug }: { siteSlug: string; equipmentSlug: string }): string =>
-  `${siteSlug}-${equipmentSlug}`;

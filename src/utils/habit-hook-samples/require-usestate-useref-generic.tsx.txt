@@ -1,9 +1,0 @@
-/** habit-hooks-disable non-essential-comment
- * This is a "Demo" example that should trigger the require-usestate-useref-generic rule.
- */
-import { useState } from "react";
-
-export const useToggleValue = () => {
-  const [value, setValue] = useState();
-  return { value, setValue };
-};
