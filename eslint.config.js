@@ -12,7 +12,7 @@ import testingLibrary from "eslint-plugin-testing-library";
 import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
 import { globalIgnores } from "eslint/config";
-import codingGuide from "@lichens-innovation/eslint-plugin-coding-guide";
+import codingGuide, { configs as codingGuideConfigs } from "@lichens-innovation/eslint-plugin-coding-guide";
 
 const testFiles = ["**/__tests__/**", "**/*.test.{ts,tsx}", "**/*.spec.{ts,tsx}"];
 
@@ -84,9 +84,8 @@ export default tseslint.config(
       "max-depth": ["error", 2],
       complexity: ["error", 15],
       "sonarjs/cognitive-complexity": ["error", 15],
-      "coding-guide/max-params-project": ["error", 1],
+      ...codingGuideConfigs.recommended.rules,
       "@typescript-eslint/max-params": ["error", { max: 2 }],
-      "coding-guide/no-explicit-undefined-optional": "error",
       "@typescript-eslint/no-explicit-any": "error",
       "@typescript-eslint/no-non-null-assertion": "error",
       "@typescript-eslint/no-inferrable-types": "error",
@@ -127,38 +126,10 @@ export default tseslint.config(
       // Replaced by coding-guide/prefer-jsx-short-circuit: `&&` short-circuit (not
       // `cond ? jsx : null`) plus `!!` / `length > 0` so non-booleans cannot leak.
       "react/jsx-no-leaked-render": "off",
-      "coding-guide/prefer-jsx-short-circuit": "error",
       "no-eval": "error",
       "no-new-func": "error",
       "react/no-danger": "error",
       "unicorn/filename-case": ["error", { case: "kebabCase" }],
-      "coding-guide/require-numeric-enum-initializer": "error",
-      "coding-guide/no-unguarded-json-parse": "error",
-      "coding-guide/prefer-some-over-find-check": "error",
-      "coding-guide/prefer-positive-condition": "error",
-      "coding-guide/prefer-includes-over-or-chain": "error",
-      "coding-guide/no-nested-try": "error",
-      "coding-guide/no-exported-mutable-state": "error",
-      "coding-guide/no-inline-object-param-type": "error",
-      "coding-guide/prefer-nullish-helpers": "error",
-      "coding-guide/require-fallback-on-deep-chain": "error",
-      "coding-guide/no-inline-render-function": "error",
-      "coding-guide/no-jsx-in-variable": "error",
-      "coding-guide/no-inline-array-chain-in-jsx": "error",
-      "coding-guide/no-hook-returning-jsx": "error",
-      "coding-guide/no-render-fn-in-usecallback": "error",
-      "coding-guide/no-trivial-usememo": "error",
-      "coding-guide/no-non-hook-use-prefix": "error",
-      "coding-guide/no-inline-curried-handler": "error",
-      "coding-guide/no-inline-guard-chain-handler": "error",
-      "coding-guide/prefer-reactnode-over-jsxelement-union": "error",
-      "coding-guide/prefer-props-with-children": "error",
-      "coding-guide/hoist-static-component-constants": "error",
-      "coding-guide/require-effect-cleanup": "error",
-      "coding-guide/prefer-state-updater-form": "error",
-      "coding-guide/require-usestate-useref-generic": "error",
-      "coding-guide/prefer-element-ref-type": "error",
-      "coding-guide/filename-convention-by-export-shape": "error",
     },
   },
   {
@@ -178,21 +149,6 @@ export default tseslint.config(
       "testing-library/prefer-screen-queries": "error",
       "max-lines": "off",
       "max-lines-per-function": "off",
-      "coding-guide/prefer-role-query-over-testid": "error",
-      "coding-guide/no-tests-in-dunder-folder": "error",
-    },
-  },
-  {
-    files: ["**/*.{ts,tsx,js,jsx,cjs}"],
-    plugins: { "coding-guide": codingGuide },
-    rules: {
-      "coding-guide/todo-ticket-ref": [
-        "warn",
-        {
-          pattern: "([A-Z0-9]+-\\d+)",
-          comment: "TODO must include a ticket reference (e.g. TODO: JIRA-1234, TODO: https://…/browse/TBDT2-173)",
-        },
-      ],
     },
   },
   {
