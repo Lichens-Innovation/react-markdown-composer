@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.4.1...v1.4.2) (2026-09-30)
+
+
+### Bug Fixes
+
+* **install:** stop habit-hooks install from running for consumers ([#5](https://github.com/Lichens-Innovation/react-markdown-composer/issues/5)) ([cc20ea5](https://github.com/Lichens-Innovation/react-markdown-composer/commit/cc20ea5f726aee55e16217ed096f714a6284688c))
+
 ## [1.4.1](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.4.0...v1.4.1) (2026-09-30)
 
 
