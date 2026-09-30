@@ -33,7 +33,7 @@
   },
   "packageManager": "bun@1.4.0",
   "scripts": {
-    "prepare": "husky && patch-package",
+    "prepare": "husky && patch-package && bun run habit:install",
     "clean:node": "rimraf node_modules bun.lock",
     "start": "vite dev",
     "generate:version": "tsx scripts/generate-version.ts",
@@ -47,7 +47,7 @@
     "format:check": "prettier --check .",
     "habit:hooks": "habit-hooks --branch main",
     "habit:snoozed": "habit-snooze --list",
-    "postinstall": "sh scripts/install-habit-hooks.sh",
+    "habit:install": "sh scripts/install-habit-hooks.sh",
     "build": "rimraf dist && vite build",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
