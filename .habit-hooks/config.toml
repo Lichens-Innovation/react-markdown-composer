@@ -16,6 +16,7 @@ guide = "sonarjs-cognitive-complexity.md"
 
 [smells.non-essential-comment]
 severity = "enforced"
+guide = "non-essential-comment.md"
 
 [smells."coding-guide/max-params-project"]
 severity = "enforced"
@@ -156,6 +157,10 @@ guide = "no-trivial-usememo.md"
 [smells."coding-guide/no-non-hook-use-prefix"]
 severity = "enforced"
 guide = "no-non-hook-use-prefix.md"
+
+[smells."coding-guide/one-component-per-tsx-file"]
+severity = "enforced"
+guide = "one-component-per-tsx-file.md"
 
 [smells."coding-guide/no-inline-curried-handler"]
 severity = "enforced"
