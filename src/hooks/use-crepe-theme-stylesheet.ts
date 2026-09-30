@@ -1,21 +1,20 @@
 import { useEffect } from "react";
 
-import frameDarkUrl from "@milkdown/crepe/theme/frame-dark.css?url";
-import frameLightUrl from "@milkdown/crepe/theme/frame.css?url";
+import frameDarkCss from "@milkdown/crepe/theme/frame-dark.css?inline";
+import frameLightCss from "@milkdown/crepe/theme/frame.css?inline";
 
-const CREPE_THEME_LINK_ID = "markdown-composer-crepe-theme";
+const CREPE_THEME_STYLE_ID = "markdown-composer-crepe-theme";
 
 export const useCrepeThemeStylesheet = (isDark: boolean): void => {
   useEffect(() => {
-    let link = document.querySelector<HTMLLinkElement>(`#${CREPE_THEME_LINK_ID}`);
+    let style = document.querySelector<HTMLStyleElement>(`#${CREPE_THEME_STYLE_ID}`);
 
-    if (!link) {
-      link = document.createElement("link");
-      link.id = CREPE_THEME_LINK_ID;
-      link.rel = "stylesheet";
-      document.head.append(link);
+    if (!style) {
+      style = document.createElement("style");
+      style.id = CREPE_THEME_STYLE_ID;
+      document.head.append(style);
     }
 
-    link.href = isDark ? frameDarkUrl : frameLightUrl;
+    style.textContent = isDark ? frameDarkCss : frameLightCss;
   }, [isDark]);
 };

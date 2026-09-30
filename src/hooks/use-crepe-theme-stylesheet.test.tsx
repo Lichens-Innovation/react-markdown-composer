@@ -1,11 +1,11 @@
 import { render } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 
-import frameDarkUrl from "@milkdown/crepe/theme/frame-dark.css?url";
-import frameLightUrl from "@milkdown/crepe/theme/frame.css?url";
+import frameDarkCss from "@milkdown/crepe/theme/frame-dark.css?inline";
+import frameLightCss from "@milkdown/crepe/theme/frame.css?inline";
 import { useCrepeThemeStylesheet } from "./use-crepe-theme-stylesheet";
 
-const LINK_ID = "markdown-composer-crepe-theme";
+const STYLE_ID = "markdown-composer-crepe-theme";
 
 interface HarnessProps {
   isDark: boolean;
@@ -17,32 +17,33 @@ const Harness = ({ isDark }: HarnessProps) => {
 };
 
 afterEach(() => {
-  document.getElementById(LINK_ID)?.remove();
+  document.getElementById(STYLE_ID)?.remove();
 });
 
 describe("use-crepe-theme-stylesheet", () => {
   describe("useCrepeThemeStylesheet", () => {
-    it("should create a single stylesheet link in the document head", () => {
+    it("should create a single style element in the document head", () => {
       // Arrange & Act
       render(<Harness isDark={false} />);
 
       // Assert
-      expect(document.head.querySelectorAll(`#${LINK_ID}`)).toHaveLength(1);
+      const styles = document.head.querySelectorAll(`#${STYLE_ID}`);
+      expect(styles).toHaveLength(1);
+      expect(styles[0]?.tagName).toBe("STYLE");
     });
 
     it.each([
-      { isDark: false, expectedUrl: frameLightUrl },
-      { isDark: true, expectedUrl: frameDarkUrl },
-    ])("should point href at the $isDark theme stylesheet", ({ isDark, expectedUrl }) => {
+      { isDark: false, expectedCss: frameLightCss },
+      { isDark: true, expectedCss: frameDarkCss },
+    ])("should inject the $isDark theme css", ({ isDark, expectedCss }) => {
       // Arrange & Act
       render(<Harness isDark={isDark} />);
 
       // Assert
-      const link = document.getElementById(LINK_ID);
-      expect(link?.getAttribute("href")).toBe(expectedUrl);
+      expect(document.getElementById(STYLE_ID)?.textContent).toBe(expectedCss);
     });
 
-    it("should update the same link's href when isDark toggles", () => {
+    it("should update the same style element's css when isDark toggles", () => {
       // Arrange
       const { rerender } = render(<Harness isDark={false} />);
 
@@ -50,11 +51,11 @@ describe("use-crepe-theme-stylesheet", () => {
       rerender(<Harness isDark={true} />);
 
       // Assert
-      expect(document.head.querySelectorAll(`#${LINK_ID}`)).toHaveLength(1);
-      expect(document.getElementById(LINK_ID)?.getAttribute("href")).toBe(frameDarkUrl);
+      expect(document.head.querySelectorAll(`#${STYLE_ID}`)).toHaveLength(1);
+      expect(document.getElementById(STYLE_ID)?.textContent).toBe(frameDarkCss);
     });
 
-    it("should not duplicate the link when rerendered with the same isDark value", () => {
+    it("should not duplicate the style element when rerendered with the same isDark value", () => {
       // Arrange
       const { rerender } = render(<Harness isDark={false} />);
 
@@ -62,7 +63,7 @@ describe("use-crepe-theme-stylesheet", () => {
       rerender(<Harness isDark={false} />);
 
       // Assert
-      expect(document.head.querySelectorAll(`#${LINK_ID}`)).toHaveLength(1);
+      expect(document.head.querySelectorAll(`#${STYLE_ID}`)).toHaveLength(1);
     });
   });
 });
