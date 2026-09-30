@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.4.0...v1.4.1) (2026-09-30)
+
+
+### Bug Fixes
+
+* **theme:** inline crepe frame css to avoid vite optimize deps 404 ([5f51238](https://github.com/Lichens-Innovation/react-markdown-composer/commit/5f5123823d9bc020b72239474e0ea47292c96c69))
+
 # [1.4.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.3.0...v1.4.0) (2026-08-30)
 
 
