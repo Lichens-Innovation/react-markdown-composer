@@ -68,8 +68,8 @@ Starts the Vite playground on http://localhost:3000 and opens `MarkdownComposer`
 
 | Command                 | Description                                                                                         |
 | ----------------------- | --------------------------------------------------------------------------------------------------- |
-| `bun prepare`           | Installs husky git hooks and applies patch-package patches (runs on `bun install`)                  |
-| `bun postinstall`       | Installs habit-hooks for local lint coaching (runs on `bun install`; skipped in CI)                 |
+| `bun prepare`           | Installs husky git hooks, applies patch-package patches, installs habit-hooks (runs on `bun install`) |
+| `bun habit:install`     | Installs habit-hooks for local lint coaching (runs via `prepare` on `bun install`; skipped in CI)   |
 | `bun clean:node`        | Removes node_modules directories and bun.lock file                                                  |
 | `bun start`             | Starts the Vite playground (MarkdownComposer)                                                       |
 | `bun generate:version`  | Writes version constants from package.json (optional local helper)                                  |
