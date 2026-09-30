@@ -50,17 +50,13 @@ const MyComposerDialogBody = ({ inputData }) => {
 
 ## Development
 
-Install [Bun](https://bun.sh/docs/installation) 1.4+ (see `packageManager` in `package.json`), then:
+Install [Bun](https://bun.sh/docs/installation) 1.4+ (see `packageManager` in `package.json`) and [uv](https://docs.astral.sh/uv/) (Python 3.11+, for local lint coaching), then:
 
 ```bash
 bun install
 ```
 
-Install [habit-hooks](https://github.com/habit-hooks/habit-hooks) (Python 3.11+) to run the `bun run lint` / `bun run habit:hooks` / `bun run habit:snoozed` scripts below:
-
-```bash
-uv tool install "habit-hooks[typescript]"  # pip, pipx or brew also work
-```
+`bun install` also installs [habit-hooks](https://github.com/habit-hooks/habit-hooks) automatically. If `uv` is not installed, install succeeds anyway — install `uv` and re-run `bun install`, or run `uv tool install "habit-hooks[typescript]"` manually.
 
 ```bash
 bun start
@@ -73,6 +69,7 @@ Starts the Vite playground on http://localhost:3000 and opens `MarkdownComposer`
 | Command                 | Description                                                                                         |
 | ----------------------- | --------------------------------------------------------------------------------------------------- |
 | `bun prepare`           | Installs husky git hooks and applies patch-package patches (runs on `bun install`)                  |
+| `bun postinstall`       | Installs habit-hooks for local lint coaching (runs on `bun install`; skipped in CI)                 |
 | `bun clean:node`        | Removes node_modules directories and bun.lock file                                                  |
 | `bun start`             | Starts the Vite playground (MarkdownComposer)                                                       |
 | `bun generate:version`  | Writes version constants from package.json (optional local helper)                                  |
