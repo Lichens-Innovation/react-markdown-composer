@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.4.2...v1.5.0) (2026-10-05)
+
+
+### Features
+
+* **widths:** improve default panel widths and add panelWidths prop ([#6](https://github.com/Lichens-Innovation/react-markdown-composer/issues/6)) ([ccbd866](https://github.com/Lichens-Innovation/react-markdown-composer/commit/ccbd866d019c9768e52305df3782631fca3a6dcb))
+
 ## [1.4.2](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.4.1...v1.4.2) (2026-09-30)
 
 
