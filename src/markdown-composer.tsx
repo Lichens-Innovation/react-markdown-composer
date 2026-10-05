@@ -12,7 +12,7 @@ import { useDebouncedTemplatePreview } from "./hooks/use-debounced-template-prev
 import { useIsAntdDark } from "./hooks/use-is-antd-dark";
 import type { MarkdownComposerProps } from "./markdown-composer.types";
 import {
-  DEFAULT_PANEL_WIDTHS,
+  DEFAULT_PANEL_WIDTH_PERCENTS,
   DEFAULT_PREVIEW_DEBOUNCE_MS,
   getCollapsedFlags,
   toPercent,
@@ -40,7 +40,7 @@ export const MarkdownComposer: FunctionComponent<MarkdownComposerProps> = ({
   useCrepeThemeStylesheet(isDark);
 
   const editorHandleRef = useRef<MarkdownEditorHandle | null>(null);
-  const widths = { ...DEFAULT_PANEL_WIDTHS, ...panelWidths };
+  const widths = { ...DEFAULT_PANEL_WIDTH_PERCENTS, ...panelWidths };
 
   const { previewMarkdown, previewErrorMessage } = useDebouncedTemplatePreview({
     template: markdown,

@@ -1,7 +1,7 @@
 export { MarkdownComposer } from "./markdown-composer";
 export type {
   MarkdownComposerProps,
-  PanelWidths,
+  PanelWidthPercents,
   PrintableImage,
   RenderTemplate,
   TranslateTemplate,
