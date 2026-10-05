@@ -16,6 +16,12 @@ export interface PrintableImage {
   imageDataURI: string;
 }
 
+export interface PanelWidthPercents {
+  objectGraph: number;
+  editor: number;
+  preview: number;
+}
+
 export interface MarkdownComposerProps {
   inputData: unknown;
   markdown: string;
@@ -27,6 +33,7 @@ export interface MarkdownComposerProps {
   isPreviewVisible?: boolean;
   onObjectGraphVisibleChange?: (isVisible: boolean) => void;
   onPreviewVisibleChange?: (isVisible: boolean) => void;
+  panelWidths?: Partial<PanelWidthPercents>;
   className?: string;
   style?: CSSProperties;
 }

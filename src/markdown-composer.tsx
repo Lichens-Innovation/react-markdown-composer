@@ -11,7 +11,12 @@ import { useCrepeThemeStylesheet } from "./hooks/use-crepe-theme-stylesheet";
 import { useDebouncedTemplatePreview } from "./hooks/use-debounced-template-preview";
 import { useIsAntdDark } from "./hooks/use-is-antd-dark";
 import type { MarkdownComposerProps } from "./markdown-composer.types";
-import { DEFAULT_PREVIEW_DEBOUNCE_MS, getCollapsedFlags } from "./markdown-composer.utils";
+import {
+  DEFAULT_PANEL_WIDTH_PERCENTS,
+  DEFAULT_PREVIEW_DEBOUNCE_MS,
+  getCollapsedFlags,
+  toPercent,
+} from "./markdown-composer.utils";
 
 const { useToken } = theme;
 
@@ -26,6 +31,7 @@ export const MarkdownComposer: FunctionComponent<MarkdownComposerProps> = ({
   isPreviewVisible = true,
   onObjectGraphVisibleChange,
   onPreviewVisibleChange,
+  panelWidths,
   className,
   style,
 }) => {
@@ -34,6 +40,7 @@ export const MarkdownComposer: FunctionComponent<MarkdownComposerProps> = ({
   useCrepeThemeStylesheet(isDark);
 
   const editorHandleRef = useRef<MarkdownEditorHandle | null>(null);
+  const widths = { ...DEFAULT_PANEL_WIDTH_PERCENTS, ...panelWidths };
 
   const { previewMarkdown, previewErrorMessage } = useDebouncedTemplatePreview({
     template: markdown,
@@ -61,15 +68,15 @@ export const MarkdownComposer: FunctionComponent<MarkdownComposerProps> = ({
       styles={styles.panel}
       onCollapse={handleCollapse}
     >
-      <Splitter.Panel defaultSize={isObjectGraphVisible ? "25%" : 0} min="15%" collapsible>
+      <Splitter.Panel defaultSize={isObjectGraphVisible ? toPercent(widths.objectGraph) : 0} collapsible>
         <ObjectGraphPanel inputData={inputData} onKeyNameClick={(path) => editorHandleRef.current?.insertPath(path)} />
       </Splitter.Panel>
 
-      <Splitter.Panel defaultSize="50%" min="30%">
+      <Splitter.Panel defaultSize={toPercent(widths.editor)}>
         <MarkdownEditorPanel markdown={markdown} onMarkdownChange={onMarkdownChange} editorRef={editorHandleRef} />
       </Splitter.Panel>
 
-      <Splitter.Panel defaultSize={isPreviewVisible ? "25%" : 0} min="15%" collapsible>
+      <Splitter.Panel defaultSize={isPreviewVisible ? toPercent(widths.preview) : 0} collapsible>
         <MarkdownPreviewPanel markdown={cleanTemplate(previewMarkdown)} errorMessage={previewErrorMessage} />
       </Splitter.Panel>
     </Splitter>
