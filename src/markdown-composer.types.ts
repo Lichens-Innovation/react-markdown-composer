@@ -16,6 +16,13 @@ export interface PrintableImage {
   imageDataURI: string;
 }
 
+/** Initial panel widths in percentages, e.g. 15 = 15% */ // habit-hooks-disable non-essential-comment
+export interface PanelWidths {
+  objectGraph: number;
+  editor: number;
+  preview: number;
+}
+
 export interface MarkdownComposerProps {
   inputData: unknown;
   markdown: string;
@@ -27,6 +34,7 @@ export interface MarkdownComposerProps {
   isPreviewVisible?: boolean;
   onObjectGraphVisibleChange?: (isVisible: boolean) => void;
   onPreviewVisibleChange?: (isVisible: boolean) => void;
+  panelWidths?: Partial<PanelWidths>;
   className?: string;
   style?: CSSProperties;
 }

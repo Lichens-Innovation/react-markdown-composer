@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { buildObjectPath, getCollapsedFlags, toJsonViewValue } from "./markdown-composer.utils";
+import { buildObjectPath, getCollapsedFlags, toJsonViewValue, toPercent } from "./markdown-composer.utils";
 
 describe("markdown-composer.utils", () => {
   describe("buildObjectPath", () => {
@@ -54,6 +54,26 @@ describe("markdown-composer.utils", () => {
 
       // Assert
       expect(value).toEqual(expected);
+    });
+  });
+
+  describe("toPercent", () => {
+    interface ToPercentCase {
+      value: number;
+      expected: string;
+    }
+
+    it.each`
+      value   | expected
+      ${15}   | ${"15%"}
+      ${0}    | ${"0%"}
+      ${33.5} | ${"33.5%"}
+    `("should format $value as $expected", ({ value, expected }: ToPercentCase) => {
+      // Arrange & Act
+      const percent = toPercent(value);
+
+      // Assert
+      expect(percent).toBe(expected);
     });
   });
 
