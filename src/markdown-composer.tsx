@@ -61,15 +61,15 @@ export const MarkdownComposer: FunctionComponent<MarkdownComposerProps> = ({
       styles={styles.panel}
       onCollapse={handleCollapse}
     >
-      <Splitter.Panel defaultSize={isObjectGraphVisible ? "25%" : 0} min="15%" collapsible>
+      <Splitter.Panel defaultSize={isObjectGraphVisible ? "15%" : 0} collapsible>
         <ObjectGraphPanel inputData={inputData} onKeyNameClick={(path) => editorHandleRef.current?.insertPath(path)} />
       </Splitter.Panel>
 
-      <Splitter.Panel defaultSize="50%" min="30%">
+      <Splitter.Panel defaultSize="50%">
         <MarkdownEditorPanel markdown={markdown} onMarkdownChange={onMarkdownChange} editorRef={editorHandleRef} />
       </Splitter.Panel>
 
-      <Splitter.Panel defaultSize={isPreviewVisible ? "25%" : 0} min="15%" collapsible>
+      <Splitter.Panel defaultSize={isPreviewVisible ? "35%" : 0} collapsible>
         <MarkdownPreviewPanel markdown={cleanTemplate(previewMarkdown)} errorMessage={previewErrorMessage} />
       </Splitter.Panel>
     </Splitter>
