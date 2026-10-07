@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.5.0...v1.6.0) (2026-10-07)
+
+
+### Features
+
+* **editor:** no-wrap editor, new default panel widths, and dependency CVE fixes ([#7](https://github.com/Lichens-Innovation/react-markdown-composer/issues/7)) ([e6aea72](https://github.com/Lichens-Innovation/react-markdown-composer/commit/e6aea72d0133a266faa11fbb927738fdcbf17136))
+
 # [1.5.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.4.2...v1.5.0) (2026-10-05)
 
 
