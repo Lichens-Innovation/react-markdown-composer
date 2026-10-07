@@ -51,7 +51,6 @@ export const useCodemirrorMarkdownEditor = ({
         extensions: [
           basicSetup,
           markdownLanguage(),
-          EditorView.lineWrapping,
           editorLayoutTheme,
           themeCompartmentRef.current.of(isDarkRef.current ? oneDark : []),
           EditorView.updateListener.of((update) => {
