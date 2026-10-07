@@ -1,7 +1,7 @@
 import type { PanelWidthPercents } from "./markdown-composer.types";
 
 export const DEFAULT_PREVIEW_DEBOUNCE_MS = 300;
-export const DEFAULT_PANEL_WIDTH_PERCENTS: PanelWidthPercents = { objectGraph: 15, editor: 50, preview: 35 };
+export const DEFAULT_PANEL_WIDTH_PERCENTS: PanelWidthPercents = { objectGraph: 25, editor: 35, preview: 40 };
 
 export const toPercent = (value: number): string => `${value}%`;
 
