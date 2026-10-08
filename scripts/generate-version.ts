@@ -1,6 +1,8 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { createInterface } from "node:readline";
 
+import { getErrorMessage, isBlank } from "@lichens-innovation/ts-common";
+
 const packageJsonPath = "./package.json";
 const constantsFilename = "./src/constants.ts";
 
@@ -37,7 +39,7 @@ const promptVersion = (currentVersion: string): Promise<string> => {
     rl.question(question, (answer) => {
       rl.close();
       const newVersion = answer.trim();
-      resolve(newVersion || currentVersion);
+      resolve(isBlank(newVersion) ? currentVersion : newVersion);
     });
   });
 };
@@ -101,7 +103,7 @@ const main = async (): Promise<void> => {
     writeFileSync(constantsFilename, data, { encoding: "utf8" });
     console.info(`[generate-version] File "${constantsFilename}" written successfully`);
   } catch (err) {
-    const message = err instanceof Error ? err.message : String(err);
+    const message = getErrorMessage(err);
     console.error(`[generate-version] Error: ${message}`, { err });
     process.exit(1);
   }

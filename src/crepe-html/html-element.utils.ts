@@ -1,3 +1,5 @@
+import { isBlank } from "@lichens-innovation/ts-common";
+
 import {
   ALLOWED_HTML_ATTRIBUTES,
   ALLOWED_HTML_TAGS,
@@ -44,7 +46,7 @@ const parseHtmlAttributes = (attrString: string): Record<string, string> => {
 
   for (const match of attrString.matchAll(HTML_ATTRIBUTE_RE)) {
     const name = match[1]?.toLowerCase();
-    if (!name) {
+    if (isBlank(name)) {
       continue;
     }
 
@@ -62,7 +64,7 @@ export const parseHtmlTag = (value: string): ParsedHtmlTag | undefined => {
   }
 
   const tagName = match[1]?.toLowerCase();
-  if (!tagName) {
+  if (isBlank(tagName)) {
     return undefined;
   }
 
