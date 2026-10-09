@@ -1,3 +1,4 @@
+import { isNotBlank } from "@lichens-innovation/ts-common";
 import { MilkdownProvider } from "@milkdown/react";
 import { Alert, Flex, theme } from "antd";
 import { type FunctionComponent } from "react";
@@ -20,7 +21,7 @@ export const MarkdownPreviewPanel: FunctionComponent<MarkdownPreviewPanelProps> 
 
   return (
     <Flex vertical role="region" aria-label="Markdown preview" className="markdown-preview-panel" style={styles.root}>
-      {!!errorMessage && (
+      {isNotBlank(errorMessage) && (
         <Alert type="error" showIcon title="Template preview error" description={errorMessage} style={styles.alert} />
       )}
 
