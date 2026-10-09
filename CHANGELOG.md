@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.6.0...v1.6.1) (2026-10-09)
+
+
+### Bug Fixes
+
+* **dep:** cve fix bump ([5143ece](https://github.com/Lichens-Innovation/react-markdown-composer/commit/5143eceaf33d1f95e477a6cb401ec1ba8f54c287))
+
 # [1.6.0](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.5.0...v1.6.0) (2026-10-07)
 
 
