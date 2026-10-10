@@ -175,53 +175,62 @@ const findMatchingCloseIndex = ({ nodes, startIndex, tagName }: FindMatchingClos
   return undefined;
 };
 
+interface PairNodeAtArgs {
+  nodes: HtmlMdastNode[];
+  index: number;
+}
+
+interface PairedNode {
+  node?: HtmlMdastNode;
+  nextIndex: number;
+}
+
+const getAllowedOpenTag = (node: HtmlMdastNode): ParsedHtmlTag | undefined => {
+  if (node.type !== HTML_MDAST_TYPE || typeof node.value !== "string") {
+    return undefined;
+  }
+
+  const parsedTag = parseHtmlTag(node.value);
+  if (!parsedTag || parsedTag.isClosing || !isAllowedHtmlTag(parsedTag.tagName)) {
+    return undefined;
+  }
+
+  return parsedTag;
+};
+
+const pairNodeAt = ({ nodes, index }: PairNodeAtArgs): PairedNode => {
+  const node = nodes[index];
+  const openTag = node ? getAllowedOpenTag(node) : undefined;
+  if (!openTag) {
+    return { node, nextIndex: index + 1 };
+  }
+
+  const { tagName } = openTag;
+  const htmlAttrs = sanitizeHtmlAttributes(openTag.attributes);
+  if (openTag.isSelfClosing) {
+    return { node: createHtmlElementNode({ tagName, htmlAttrs, children: [] }), nextIndex: index + 1 };
+  }
+
+  const closeIndex = findMatchingCloseIndex({ nodes, startIndex: index + 1, tagName });
+  if (closeIndex === undefined) {
+    return { node, nextIndex: index + 1 };
+  }
+
+  const children = pairHtmlElements(nodes.slice(index + 1, closeIndex));
+  return { node: createHtmlElementNode({ tagName, htmlAttrs, children }), nextIndex: closeIndex + 1 };
+};
+
 const pairHtmlElements = (nodes: HtmlMdastNode[]): HtmlMdastNode[] => {
   const result: HtmlMdastNode[] = [];
   let index = 0;
 
   while (index < nodes.length) {
-    const node = nodes[index];
-    if (!node) {
-      index += 1;
-      continue;
-    }
-
-    if (node.type !== HTML_MDAST_TYPE || typeof node.value !== "string") {
+    const { node, nextIndex } = pairNodeAt({ nodes, index });
+    if (node) {
       result.push(node);
-      index += 1;
-      continue;
     }
 
-    const parsedTag = parseHtmlTag(node.value);
-    if (!parsedTag || parsedTag.isClosing || !isAllowedHtmlTag(parsedTag.tagName)) {
-      result.push(node);
-      index += 1;
-      continue;
-    }
-
-    const htmlAttrs = sanitizeHtmlAttributes(parsedTag.attributes);
-
-    if (parsedTag.isSelfClosing) {
-      result.push(createHtmlElementNode({ tagName: parsedTag.tagName, htmlAttrs, children: [] }));
-      index += 1;
-      continue;
-    }
-
-    const closeIndex = findMatchingCloseIndex({ nodes, startIndex: index + 1, tagName: parsedTag.tagName });
-    if (closeIndex === undefined) {
-      result.push(node);
-      index += 1;
-      continue;
-    }
-
-    result.push(
-      createHtmlElementNode({
-        tagName: parsedTag.tagName,
-        htmlAttrs,
-        children: pairHtmlElements(nodes.slice(index + 1, closeIndex)),
-      })
-    );
-    index = closeIndex + 1;
+    index = nextIndex;
   }
 
   return result;
