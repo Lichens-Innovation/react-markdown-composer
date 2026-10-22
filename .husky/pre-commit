@@ -14,3 +14,10 @@ echo "✅ Lint staged completed"
 echo "Running habit-hooks to catches structural smells…"
 bun run habit:hooks
 echo "✅ Habit Hooks completed"
+
+# Scan for known CVEs only when dependencies change.
+if git diff --cached --name-only | grep -qE '^(package\.json|bun\.lock)$'; then
+  echo "Running security check to detect known CVEs in dependencies…"
+  bun run security:check
+  echo "✅ Security check completed"
+fi
