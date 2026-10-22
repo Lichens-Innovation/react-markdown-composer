@@ -13,6 +13,7 @@ Reusable React component for composing markdown.
   - [Usage](#usage)
   - [Development](#development)
   - [All Scripts](#all-scripts)
+  - [Dependency patches](#dependency-patches)
   - [Project coding guidelines](#project-coding-guidelines)
   - [Contributions](#contributions)
   - [Library semantic versioning](#library-semantic-versioning)
@@ -81,12 +82,24 @@ Starts the Vite playground on http://localhost:3000 and opens `MarkdownComposer`
 | `bun lint:unused`       | Finds unused files, exports, and dependencies (via knip)                                            |
 | `bun format`            | Formats all files using Prettier according to .prettierrc rules                                     |
 | `bun format:check`      | Checks if files are formatted according to Prettier rules                                           |
+| `bun security:check`    | Audits all deps for new CVEs vs baseline, fails on high severity (`cve-lite-cli`)                   |
 | `bun habit:hooks`       | Runs habit-hooks against the `main` branch (`habit-hooks --branch main`)                            |
 | `bun habit:snoozed`     | Lists the currently snoozed habit-hooks findings (`.habit-hooks/snooze.json`)                       |
 | `bun build`             | Cleans `dist`, then Vite library build (`src/index.ts` → `dist/`)                                   |
 | `bun test`              | Runs tests using Vitest                                                                             |
 | `bun test:coverage`     | Runs tests with a Vitest coverage report                                                            |
 | `bun test:crap`         | Runs tests with coverage, then generates a CRAP score report (`crap-report/`)                       |
+
+## Dependency patches
+
+Patches in `patches/` are applied on install by [patch-package](https://github.com/ds300/patch-package) (`prepare`).
+
+| Package                      | Why                                                                                                                                                                                                                                                       |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `braces@3.0.3`               | [CVE-2026-93687](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm) (stack-overflow DoS), no fixed release yet ([braces#70](https://github.com/micromatch/braces/issues/70)). Patch backports [braces#88](https://github.com/micromatch/braces/pull/88). |
+| `eslint-plugin-react@7.37.5` | ESLint 10 compatibility (`context.getFilename()` removed). Remove when upstream supports ESLint 10.                                                                                                                                                       |
+
+`cve-lite-cli` matches by version only, so patched findings stay accepted in `.cve-lite/baseline.json` (`security:check` runs with `--ratchet`). Once a fixed release ships: upgrade, delete the patch and its baseline entry. The baseline also accepts findings with no in-range fix (e.g. `pacote` / `sigstore` bundled inside `npm` via `semantic-release`, fixed only by `semantic-release@25`).
 
 ## Project coding guidelines
 
