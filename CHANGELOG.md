@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.6.1...v1.6.2) (2026-10-22)
+
+
+### Bug Fixes
+
+* **security:** add cve-lite-cli check with ratchet baseline and fix CVEs ([#11](https://github.com/Lichens-Innovation/react-markdown-composer/issues/11)) ([80d1a01](https://github.com/Lichens-Innovation/react-markdown-composer/commit/80d1a015b847dc74cb0c33ce678501e4f27db84a)), closes [micromatch/braces#88](https://github.com/micromatch/braces/issues/88)
+
 ## [1.6.1](https://github.com/Lichens-Innovation/react-markdown-composer/compare/v1.6.0...v1.6.1) (2026-10-09)
 
 
